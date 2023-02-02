@@ -1,0 +1,683 @@
+{'text': 'in this video you will learn how to', 'start': 0.08, 'duration': 3.599}
+{'text': 'create a machine learning model', 'start': 1.92, 'duration': 4.08}
+{'text': 'and how to deploy it using flask from', 'start': 3.679, 'duration': 3.12}
+{'text': 'scratch', 'start': 6.0, 'duration': 2.96}
+{'text': 'watch the video till the end so that you', 'start': 6.799, 'duration': 5.281}
+{'text': 'will understand everything step by step', 'start': 8.96, 'duration': 5.44}
+{'text': 'we are going to do two steps the first', 'start': 12.08, 'duration': 4.48}
+{'text': 'step will be building the ml model that', 'start': 14.4, 'duration': 3.92}
+{'text': 'is the machine learning model', 'start': 16.56, 'duration': 3.76}
+{'text': 'then the second step will be to deploy', 'start': 18.32, 'duration': 3.44}
+{'text': 'it using flask', 'start': 20.32, 'duration': 3.119}
+{'text': 'and in the process of building and', 'start': 21.76, 'duration': 4.16}
+{'text': 'deploying we will create several files', 'start': 23.439, 'duration': 5.201}
+{'text': 'and the first file will be model dot py', 'start': 25.92, 'duration': 4.16}
+{'text': 'this is going to be a python', 'start': 28.64, 'duration': 3.36}
+{'text': 'file and this file will contain our', 'start': 30.08, 'duration': 3.44}
+{'text': 'machine learning model', 'start': 32.0, 'duration': 3.84}
+{'text': 'once we create our model we will convert', 'start': 33.52, 'duration': 3.12}
+{'text': 'this model', 'start': 35.84, 'duration': 3.44}
+{'text': 'into a pickle object then we will make', 'start': 36.64, 'duration': 3.12}
+{'text': 'one', 'start': 39.28, 'duration': 3.2}
+{'text': 'pickle file that is the pickle of our', 'start': 39.76, 'duration': 4.479}
+{'text': 'machine learning model', 'start': 42.48, 'duration': 4.0}
+{'text': 'then we will create one more python file', 'start': 44.239, 'duration': 3.361}
+{'text': 'app.py', 'start': 46.48, 'duration': 3.28}
+{'text': 'and this file will contain our flask', 'start': 47.6, 'duration': 3.279}
+{'text': 'application', 'start': 49.76, 'duration': 3.799}
+{'text': 'then we will also have one more file', 'start': 50.879, 'duration': 4.241}
+{'text': 'index.html', 'start': 53.559, 'duration': 4.84}
+{'text': 'and index.html will contain the html', 'start': 55.12, 'duration': 4.239}
+{'text': 'codes', 'start': 58.399, 'duration': 4.16}
+{'text': 'which we will see on our server then we', 'start': 59.359, 'duration': 6.721}
+{'text': 'have one more file this is the iris.csv', 'start': 62.559, 'duration': 5.681}
+{'text': 'this is going to be the data we are', 'start': 66.08, 'duration': 4.0}
+{'text': 'going to use this data to develop our', 'start': 68.24, 'duration': 3.12}
+{'text': 'machine learning model', 'start': 70.08, 'duration': 3.68}
+{'text': 'we will use pycharm ide to develop our', 'start': 71.36, 'duration': 4.799}
+{'text': 'ml model and deploy using flask', 'start': 73.76, 'duration': 5.12}
+{'text': 'you can use any other ide of your choice', 'start': 76.159, 'duration': 3.28}
+{'text': 'such as', 'start': 78.88, 'duration': 3.919}
+{'text': 'visual studio called or spider', 'start': 79.439, 'duration': 6.641}
+{'text': "first i'll create a folder in my c drive", 'start': 82.799, 'duration': 6.32}
+{'text': "i'll click on this pc i'll go to c", 'start': 86.08, 'duration': 7.12}
+{'text': "drive and i'll make one folder here", 'start': 89.119, 'duration': 4.081}
+{'text': 'and the folder name will be ml model', 'start': 93.28, 'duration': 8.479}
+{'text': 'deployment', 'start': 98.84, 'duration': 5.239}
+{'text': 'and inside this folder i will put two', 'start': 101.759, 'duration': 3.281}
+{'text': 'files', 'start': 104.079, 'duration': 3.601}
+{'text': 'the first will be the data file and the', 'start': 105.04, 'duration': 3.6}
+{'text': 'data file is', 'start': 107.68, 'duration': 5.119}
+{'text': 'on my desktop so i have iris dot csv', 'start': 108.64, 'duration': 5.92}
+{'text': "i'll copy this from here", 'start': 112.799, 'duration': 3.92}
+{'text': "and now i'll go to the folder and paste", 'start': 114.56, 'duration': 3.36}
+{'text': 'it here', 'start': 116.719, 'duration': 2.961}
+{'text': 'so this is going to the data file on', 'start': 117.92, 'duration': 2.96}
+{'text': 'which we are going to develop our', 'start': 119.68, 'duration': 2.799}
+{'text': 'machine learning model', 'start': 120.88, 'duration': 4.239}
+{'text': 'the second is the template folder so i', 'start': 122.479, 'duration': 5.121}
+{'text': "have this template folder i'll copy this", 'start': 125.119, 'duration': 5.521}
+{'text': 'and paste it in my folder here', 'start': 127.6, 'duration': 5.6}
+{'text': "i'll give you all this file i'll put the", 'start': 130.64, 'duration': 3.84}
+{'text': 'link of my github', 'start': 133.2, 'duration': 3.6}
+{'text': 'from there you can download this code so', 'start': 134.48, 'duration': 3.92}
+{'text': 'in our folder templates', 'start': 136.8, 'duration': 4.079}
+{'text': 'we have a html file and this you can see', 'start': 138.4, 'duration': 3.68}
+{'text': 'that we have', 'start': 140.879, 'duration': 3.681}
+{'text': "this html file i'll show you the code", 'start': 142.08, 'duration': 3.36}
+{'text': 'inside this', 'start': 144.56, 'duration': 4.88}
+{'text': "i'll right click on this and then i will", 'start': 145.44, 'duration': 7.28}
+{'text': 'open this with notepad', 'start': 149.44, 'duration': 5.68}
+{'text': 'and you can see that these are the html', 'start': 152.72, 'duration': 4.64}
+{'text': 'codes so we have given our', 'start': 155.12, 'duration': 4.479}
+{'text': 'separate length sample with petal length', 'start': 157.36, 'duration': 3.2}
+{'text': 'petal width', 'start': 159.599, 'duration': 3.681}
+{'text': 'so these are our independent variables', 'start': 160.56, 'duration': 3.84}
+{'text': 'in which we will put', 'start': 163.28, 'duration': 3.76}
+{'text': 'the values and then we will get the', 'start': 164.4, 'duration': 3.36}
+{'text': 'output', 'start': 167.04, 'duration': 2.32}
+{'text': "so you don't have to worry about this", 'start': 167.76, 'duration': 3.44}
+{'text': 'html file', 'start': 169.36, 'duration': 4.56}
+{'text': "i'll share this with you you just have", 'start': 171.2, 'duration': 3.6}
+{'text': 'to copy', 'start': 173.92, 'duration': 3.28}
+{'text': 'paste and then put it in a folder like', 'start': 174.8, 'duration': 4.32}
+{'text': 'this so you have to make one folder', 'start': 177.2, 'duration': 2.8}
+{'text': 'where you will have', 'start': 179.12, 'duration': 3.52}
+{'text': 'this template folder and inside this', 'start': 180.0, 'duration': 4.48}
+{'text': 'this html file', 'start': 182.64, 'duration': 4.879}
+{'text': 'then you have one data file now i am', 'start': 184.48, 'duration': 4.72}
+{'text': 'going to open the pie chart', 'start': 187.519, 'duration': 3.921}
+{'text': 'and i will tell you step by step what we', 'start': 189.2, 'duration': 3.2}
+{'text': 'have to do', 'start': 191.44, 'duration': 8.4}
+{'text': "so i'll type pyjam here", 'start': 192.4, 'duration': 7.44}
+{'text': "now i'll click on open", 'start': 202.159, 'duration': 3.44}
+{'text': "then i'll go to the c drive so first", 'start': 206.879, 'duration': 3.841}
+{'text': "i'll click on this", 'start': 209.84, 'duration': 4.479}
+{'text': "refresh button now i'll open this c", 'start': 210.72, 'duration': 5.439}
+{'text': 'folder', 'start': 214.319, 'duration': 4.881}
+{'text': 'now here we have made one folder ml', 'start': 216.159, 'duration': 5.121}
+{'text': 'model deployment you can see here i have', 'start': 219.2, 'duration': 3.84}
+{'text': 'made this folder right now', 'start': 221.28, 'duration': 4.16}
+{'text': "ml model deployment so i'll click on", 'start': 223.04, 'duration': 5.759}
+{'text': 'this and click on open', 'start': 225.44, 'duration': 3.359}
+{'text': 'so we have opened our folder in pyjama', 'start': 230.4, 'duration': 6.8}
+{'text': 'and you can see here we have iris.csv', 'start': 233.519, 'duration': 6.64}
+{'text': 'and the folder templates already here to', 'start': 237.2, 'duration': 4.48}
+{'text': 'create a python file', 'start': 240.159, 'duration': 3.761}
+{'text': 'you have to click on this folder name', 'start': 241.68, 'duration': 4.4}
+{'text': 'then right click', 'start': 243.92, 'duration': 4.56}
+{'text': 'then choose new and from here you have', 'start': 246.08, 'duration': 4.48}
+{'text': 'to click on the python file', 'start': 248.48, 'duration': 4.319}
+{'text': 'then you have to give the name and our', 'start': 250.56, 'duration': 3.599}
+{'text': 'first file name will be', 'start': 252.799, 'duration': 4.561}
+{'text': 'model dot py', 'start': 254.159, 'duration': 3.201}
+{'text': 'so this is our model dot py file and in', 'start': 259.44, 'duration': 3.6}
+{'text': 'this', 'start': 262.32, 'duration': 2.72}
+{'text': 'file we will create our machine learning', 'start': 263.04, 'duration': 3.84}
+{'text': "model let's import", 'start': 265.04, 'duration': 3.439}
+{'text': 'all the libraries that are needed to', 'start': 266.88, 'duration': 3.759}
+{'text': 'develop our machine learning model', 'start': 268.479, 'duration': 4.561}
+{'text': 'first i will import pandas as pd to read', 'start': 270.639, 'duration': 4.241}
+{'text': 'our csv file', 'start': 273.04, 'duration': 4.4}
+{'text': 'import', 'start': 274.88, 'duration': 2.56}
+{'text': 'pandas as pd then from', 'start': 279.04, 'duration': 6.32}
+{'text': 'sk learn dot', 'start': 282.16, 'duration': 8.0}
+{'text': 'pre-processing import', 'start': 285.36, 'duration': 4.8}
+{'text': 'standard scalar we will scale our data', 'start': 291.04, 'duration': 7.2}
+{'text': 'independent variables', 'start': 295.12, 'duration': 3.12}
+{'text': 'from sklearn dot', 'start': 298.4, 'duration': 8.72}
+{'text': 'ensemble import', 'start': 302.24, 'duration': 7.6}
+{'text': 'random forest classifier we are going to', 'start': 307.12, 'duration': 3.519}
+{'text': 'apply this', 'start': 309.84, 'duration': 3.04}
+{'text': 'random forest classifier on our ies', 'start': 310.639, 'duration': 4.56}
+{'text': 'dataset', 'start': 312.88, 'duration': 6.4}
+{'text': 'from sklearn dot', 'start': 315.199, 'duration': 7.681}
+{'text': 'model selection import', 'start': 319.28, 'duration': 6.479}
+{'text': 'train test plate and this will be used', 'start': 322.88, 'duration': 5.12}
+{'text': 'to trade and split our data set', 'start': 325.759, 'duration': 5.201}
+{'text': 'into train test', 'start': 328.0, 'duration': 2.96}
+{'text': 'now we are going to load the csv file', 'start': 332.16, 'duration': 7.68}
+{'text': "i'm going to explain you each and", 'start': 338.08, 'duration': 4.0}
+{'text': 'everything step by step', 'start': 339.84, 'duration': 4.4}
+{'text': 'so you will understand everything and', 'start': 342.08, 'duration': 3.52}
+{'text': 'you will be very confident', 'start': 344.24, 'duration': 4.08}
+{'text': "after watching this video i'll make one", 'start': 345.6, 'duration': 4.159}
+{'text': 'variable df', 'start': 348.32, 'duration': 4.08}
+{'text': 'and now from pandas i will call the', 'start': 349.759, 'duration': 5.041}
+{'text': 'method read underscore csv', 'start': 352.4, 'duration': 5.12}
+{'text': 'and inside this i will pass our csv file', 'start': 354.8, 'duration': 4.08}
+{'text': 'name in double course', 'start': 357.52, 'duration': 4.56}
+{'text': 'and our csv file name is iris.csv', 'start': 358.88, 'duration': 6.56}
+{'text': "you can see here so i'll write iris", 'start': 362.08, 'duration': 6.399}
+{'text': 'dot csv', 'start': 365.44, 'duration': 3.039}
+{'text': 'now we will look at the top five rows of', 'start': 369.199, 'duration': 3.681}
+{'text': 'a data frame df', 'start': 371.68, 'duration': 4.72}
+{'text': "so i'll write df", 'start': 372.88, 'duration': 8.319}
+{'text': 'df dot head using head function we can', 'start': 376.4, 'duration': 6.48}
+{'text': 'look at the top five rows of our data', 'start': 381.199, 'duration': 3.041}
+{'text': 'frame so now', 'start': 382.88, 'duration': 4.56}
+{'text': "i'll right click here and then i will", 'start': 384.24, 'duration': 3.76}
+{'text': 'choose', 'start': 387.44, 'duration': 4.24}
+{'text': 'run model because our file name is model', 'start': 388.0, 'duration': 5.52}
+{'text': 'you can see here so i will click', 'start': 391.68, 'duration': 4.48}
+{'text': 'red model', 'start': 393.52, 'duration': 2.64}
+{'text': 'it has been run successfully and here', 'start': 396.8, 'duration': 3.92}
+{'text': 'you can see that process finish', 'start': 399.039, 'duration': 4.88}
+{'text': 'with exit code 0 but we did not see the', 'start': 400.72, 'duration': 4.16}
+{'text': 'head because', 'start': 403.919, 'duration': 4.321}
+{'text': 'we have to use the method print here so', 'start': 404.88, 'duration': 7.36}
+{'text': "i'll just type print and then i will", 'start': 408.24, 'duration': 7.28}
+{'text': 'cut this code from here and put it', 'start': 412.24, 'duration': 7.04}
+{'text': 'inside this and now i will run this', 'start': 415.52, 'duration': 4.239}
+{'text': 'again', 'start': 419.28, 'duration': 2.56}
+{'text': "so i'll right click and click on run", 'start': 419.759, 'duration': 4.401}
+{'text': 'model', 'start': 421.84, 'duration': 2.32}
+{'text': 'in the output you can see that we got', 'start': 424.8, 'duration': 4.32}
+{'text': 'the top five rows so these are the head', 'start': 426.479, 'duration': 4.321}
+{'text': 'we have columns such as sepal length', 'start': 429.12, 'duration': 3.84}
+{'text': 'sepal with petal length petal with n', 'start': 430.8, 'duration': 2.88}
+{'text': 'class', 'start': 432.96, 'duration': 3.359}
+{'text': 'class is a target variable while sepal', 'start': 433.68, 'duration': 4.88}
+{'text': 'length sepal with petal length and petal', 'start': 436.319, 'duration': 2.561}
+{'text': 'width', 'start': 438.56, 'duration': 2.56}
+{'text': 'are independent variables we are going', 'start': 438.88, 'duration': 4.319}
+{'text': 'to use this independent variables to', 'start': 441.12, 'duration': 3.28}
+{'text': 'predict our class', 'start': 443.199, 'duration': 4.0}
+{'text': 'whether it belongs to satosha or any', 'start': 444.4, 'duration': 5.6}
+{'text': 'other class', 'start': 447.199, 'duration': 4.641}
+{'text': 'will separate our independent and', 'start': 450.0, 'duration': 3.52}
+{'text': 'dependent variables', 'start': 451.84, 'duration': 3.759}
+{'text': 'in x we will have all the independent', 'start': 453.52, 'duration': 4.0}
+{'text': 'variables and in y we will have', 'start': 455.599, 'duration': 5.281}
+{'text': 'all the dependent variables', 'start': 457.52, 'duration': 3.36}
+{'text': 'select independent and dependent', 'start': 462.16, 'duration': 5.52}
+{'text': 'variable', 'start': 465.12, 'duration': 2.56}
+{'text': 'so next we will have all the independent', 'start': 468.0, 'duration': 3.919}
+{'text': 'variables', 'start': 470.639, 'duration': 5.441}
+{'text': 'so now here i will call our variable df', 'start': 471.919, 'duration': 6.4}
+{'text': 'and then i will make a list inside a', 'start': 476.08, 'duration': 3.119}
+{'text': 'list', 'start': 478.319, 'duration': 3.361}
+{'text': 'and then i will pass all the independent', 'start': 479.199, 'duration': 3.84}
+{'text': 'variable names here', 'start': 481.68, 'duration': 5.519}
+{'text': 'so first is going to be sample length', 'start': 483.039, 'duration': 4.16}
+{'text': 'second sample with', 'start': 490.84, 'duration': 3.799}
+{'text': 'third petal length', 'start': 499.68, 'duration': 10.239}
+{'text': 'and fourth petal with', 'start': 506.16, 'duration': 3.759}
+{'text': 'these are our independent variables', 'start': 512.719, 'duration': 4.641}
+{'text': 'now i will make one variable y and in', 'start': 517.919, 'duration': 4.641}
+{'text': 'this we will have our dependent variable', 'start': 520.32, 'duration': 4.48}
+{'text': 'and our dependent variable or the target', 'start': 522.56, 'duration': 3.04}
+{'text': 'variable', 'start': 524.8, 'duration': 3.2}
+{'text': "is the class variable so i'll call our", 'start': 525.6, 'duration': 3.679}
+{'text': 'data frame df', 'start': 528.0, 'duration': 4.839}
+{'text': 'and then i will type the variable name', 'start': 529.279, 'duration': 5.601}
+{'text': 'class', 'start': 532.839, 'duration': 5.161}
+{'text': 'so we have got x and y', 'start': 534.88, 'duration': 5.12}
+{'text': 'now we are going to split the data set', 'start': 538.0, 'duration': 4.08}
+{'text': 'into train test', 'start': 540.0, 'duration': 5.519}
+{'text': 'split the data set', 'start': 542.08, 'duration': 3.439}
+{'text': "into train and test i'll make", 'start': 546.8, 'duration': 6.24}
+{'text': 'variables x strain x test y train and y', 'start': 549.92, 'duration': 4.08}
+{'text': 'test', 'start': 553.04, 'duration': 4.32}
+{'text': 'so first is going to be x strain', 'start': 554.0, 'duration': 7.279}
+{'text': 'then x test', 'start': 557.36, 'duration': 7.44}
+{'text': 'then we have white ring', 'start': 561.279, 'duration': 6.801}
+{'text': 'and white test', 'start': 564.8, 'duration': 3.28}
+{'text': 'now i will call this method train test', 'start': 568.24, 'duration': 3.44}
+{'text': 'split', 'start': 571.2, 'duration': 4.319}
+{'text': 'so train test split', 'start': 571.68, 'duration': 6.719}
+{'text': 'now inside this we have to pass our', 'start': 575.519, 'duration': 4.721}
+{'text': 'independent and dependent variables so', 'start': 578.399, 'duration': 4.56}
+{'text': 'we will pass our variable x and y', 'start': 580.24, 'duration': 5.039}
+{'text': 'x contains our independent variables and', 'start': 582.959, 'duration': 3.281}
+{'text': 'y contain our', 'start': 585.279, 'duration': 3.361}
+{'text': 'dependent variable then we have to pass', 'start': 586.24, 'duration': 3.76}
+{'text': 'some parameter the first', 'start': 588.64, 'duration': 3.92}
+{'text': 'parameter is going to be test size that', 'start': 590.0, 'duration': 5.68}
+{'text': 'is we are going to build the model on 70', 'start': 592.56, 'duration': 6.0}
+{'text': 'of the data and the remaining 30 of data', 'start': 595.68, 'duration': 4.48}
+{'text': 'will be used for testing', 'start': 598.56, 'duration': 5.36}
+{'text': 'so here i will type 0.3 that means i am', 'start': 600.16, 'duration': 4.48}
+{'text': 'saying that', 'start': 603.92, 'duration': 3.76}
+{'text': '30 of the data will be used for testing', 'start': 604.64, 'duration': 5.439}
+{'text': 'then there is one more parameter random', 'start': 607.68, 'duration': 3.76}
+{'text': 'state', 'start': 610.079, 'duration': 3.76}
+{'text': 'and here you can give any number here', 'start': 611.44, 'duration': 3.68}
+{'text': "i'll put 50", 'start': 613.839, 'duration': 3.12}
+{'text': 'if you want your result to be same as', 'start': 615.12, 'duration': 5.2}
+{'text': 'mine then you also have to put 50 here', 'start': 616.959, 'duration': 7.201}
+{'text': 'next we will do feature scaling', 'start': 620.32, 'duration': 3.84}
+{'text': 'i will call this class standard scalar', 'start': 627.12, 'duration': 5.76}
+{'text': 'to standardize our independent variable', 'start': 630.079, 'duration': 5.521}
+{'text': "i'll make one variable sc and i will", 'start': 632.88, 'duration': 3.6}
+{'text': 'call our class', 'start': 635.6, 'duration': 4.799}
+{'text': 'standard scalar sc will be an object of', 'start': 636.48, 'duration': 5.68}
+{'text': 'this class', 'start': 640.399, 'duration': 4.161}
+{'text': 'now i am going to apply this standard', 'start': 642.16, 'duration': 3.359}
+{'text': 'scalar on', 'start': 644.56, 'duration': 4.56}
+{'text': 'x strain and x test first i will call', 'start': 645.519, 'duration': 6.961}
+{'text': 'this variable x strain', 'start': 649.12, 'duration': 3.36}
+{'text': 'then i will call object sc', 'start': 652.88, 'duration': 5.6}
+{'text': 'and from this i will call the method fit', 'start': 655.92, 'duration': 3.12}
+{'text': 'and', 'start': 658.48, 'duration': 5.12}
+{'text': 'transform then i will pass our variable', 'start': 659.04, 'duration': 7.12}
+{'text': 'x train', 'start': 663.6, 'duration': 2.56}
+{'text': 'we will do the similar process on x test', 'start': 667.36, 'duration': 3.44}
+{'text': "so i'll call", 'start': 669.92, 'duration': 5.28}
+{'text': "x test then i'll call the object", 'start': 670.8, 'duration': 7.52}
+{'text': 'sc then we have', 'start': 675.2, 'duration': 6.639}
+{'text': 'transform and', 'start': 678.32, 'duration': 7.36}
+{'text': 'i will do this on x test', 'start': 681.839, 'duration': 3.841}
+{'text': 'so in extreme we are doing the fit as', 'start': 685.92, 'duration': 3.84}
+{'text': 'well as we transform', 'start': 688.24, 'duration': 3.76}
+{'text': 'and in next test we are only applying', 'start': 689.76, 'duration': 4.96}
+{'text': 'the transform method', 'start': 692.0, 'duration': 4.959}
+{'text': 'here we have done the feature scaling', 'start': 694.72, 'duration': 3.359}
+{'text': 'the next step', 'start': 696.959, 'duration': 4.32}
+{'text': 'is to instantiate the model and we are', 'start': 698.079, 'duration': 4.481}
+{'text': 'going to use', 'start': 701.279, 'duration': 4.161}
+{'text': 'random foreign classifier to develop our', 'start': 702.56, 'duration': 4.64}
+{'text': 'classification model', 'start': 705.44, 'duration': 4.079}
+{'text': 'to develop our machine learning model so', 'start': 707.2, 'duration': 9.6}
+{'text': 'first i will instantiate the model', 'start': 709.519, 'duration': 12.0}
+{'text': "i'll make one object classifier", 'start': 716.8, 'duration': 4.719}
+{'text': 'like we have done here we have made the', 'start': 722.639, 'duration': 4.481}
+{'text': 'object of the class standard scalar', 'start': 724.88, 'duration': 4.48}
+{'text': 'and here we are making an object of our', 'start': 727.12, 'duration': 4.56}
+{'text': 'class random forest classifier', 'start': 729.36, 'duration': 4.56}
+{'text': 'now i will call the class random forest', 'start': 731.68, 'duration': 4.159}
+{'text': 'classifier', 'start': 733.92, 'duration': 4.64}
+{'text': 'so this object classifier will contain', 'start': 735.839, 'duration': 3.761}
+{'text': 'our', 'start': 738.56, 'duration': 4.32}
+{'text': 'class random forest classifier now we', 'start': 739.6, 'duration': 6.72}
+{'text': 'are going to fit the model', 'start': 742.88, 'duration': 3.44}
+{'text': 'so we will call this object classifier', 'start': 750.0, 'duration': 5.44}
+{'text': 'and from this we will call the method', 'start': 753.44, 'duration': 3.839}
+{'text': 'fit', 'start': 755.44, 'duration': 4.32}
+{'text': 'and here we have to pass our x strain in', 'start': 757.279, 'duration': 3.921}
+{'text': 'y drain', 'start': 759.76, 'duration': 5.12}
+{'text': 'so we will pass x strain', 'start': 761.2, 'duration': 7.52}
+{'text': 'and y train so here we are', 'start': 764.88, 'duration': 6.959}
+{'text': 'doing the fit on the model we are', 'start': 768.72, 'duration': 6.4}
+{'text': 'applying this fit method and once', 'start': 771.839, 'duration': 5.201}
+{'text': 'this fit method is done that means we', 'start': 775.12, 'duration': 4.32}
+{'text': 'have built our machine learning model', 'start': 777.04, 'duration': 5.2}
+{'text': 'and the next step is to make the pickle', 'start': 779.44, 'duration': 4.72}
+{'text': 'object of our model', 'start': 782.24, 'duration': 4.32}
+{'text': 'so here you can see now we have two', 'start': 784.16, 'duration': 4.239}
+{'text': 'files model.py', 'start': 786.56, 'duration': 4.8}
+{'text': 'and iris.csv and now we are going to', 'start': 788.399, 'duration': 4.961}
+{'text': 'create one more file that is the pickle', 'start': 791.36, 'duration': 4.0}
+{'text': 'of our model object', 'start': 793.36, 'duration': 6.24}
+{'text': "so let's make pickle", 'start': 795.36, 'duration': 8.0}
+{'text': 'file of our model and for this first we', 'start': 799.6, 'duration': 5.039}
+{'text': 'will need to import the', 'start': 803.36, 'duration': 4.64}
+{'text': 'pickle library so here i will call', 'start': 804.639, 'duration': 7.041}
+{'text': 'import pickle', 'start': 808.0, 'duration': 3.68}
+{'text': 'now', 'start': 812.839, 'duration': 3.0}
+{'text': 'now i will call this pickle', 'start': 816.399, 'duration': 6.641}
+{'text': 'and i will use the method dump', 'start': 819.76, 'duration': 7.04}
+{'text': 'inside this we will have to pass our', 'start': 823.04, 'duration': 7.44}
+{'text': 'object this classifier', 'start': 826.8, 'duration': 6.719}
+{'text': 'so we will write classifier so whatever', 'start': 830.48, 'duration': 3.76}
+{'text': 'you', 'start': 833.519, 'duration': 3.68}
+{'text': 'are used for fitting your model here we', 'start': 834.24, 'duration': 5.12}
+{'text': 'are using this classifier random call', 'start': 837.199, 'duration': 3.2}
+{'text': 'classifier', 'start': 839.36, 'duration': 3.76}
+{'text': 'to fit the model so in pickle dump you', 'start': 840.399, 'duration': 5.281}
+{'text': 'have to use that same classifier here', 'start': 843.12, 'duration': 4.32}
+{'text': "so that's why i'm writing classified", 'start': 845.68, 'duration': 3.519}
+{'text': 'here because we have used this', 'start': 847.44, 'duration': 4.079}
+{'text': "to fit our model that's why in", 'start': 849.199, 'duration': 5.121}
+{'text': 'pickle.dump i am using this classifier', 'start': 851.519, 'duration': 4.56}
+{'text': 'because we are going to dump this', 'start': 854.32, 'duration': 3.92}
+{'text': 'classifier', 'start': 856.079, 'duration': 6.641}
+{'text': 'then we have to pass parameter open', 'start': 858.24, 'duration': 4.48}
+{'text': 'and then we have to give our model name', 'start': 863.44, 'duration': 6.88}
+{'text': 'so we will give our model as model', 'start': 866.72, 'duration': 6.32}
+{'text': 'and then the name will be model and then', 'start': 870.32, 'duration': 4.4}
+{'text': 'we have to type the extension', 'start': 873.04, 'duration': 3.28}
+{'text': 'since this is going to be a pickle file', 'start': 874.72, 'duration': 3.119}
+{'text': 'so we will write dot', 'start': 876.32, 'duration': 4.4}
+{'text': 'p k l this is the extension of pickle', 'start': 877.839, 'duration': 4.0}
+{'text': 'file', 'start': 880.72, 'duration': 6.479}
+{'text': 'and then we have one more parameter wp', 'start': 881.839, 'duration': 5.36}
+{'text': 'we have called pickle class and from', 'start': 889.36, 'duration': 4.479}
+{'text': 'this we have used the method dump', 'start': 891.36, 'duration': 4.64}
+{'text': 'and then we have dumped our model', 'start': 893.839, 'duration': 3.841}
+{'text': 'classifier which we have', 'start': 896.0, 'duration': 3.92}
+{'text': 'used here to fit our model and then we', 'start': 897.68, 'duration': 4.24}
+{'text': 'have given the name to our model', 'start': 899.92, 'duration': 5.279}
+{'text': 'and the extension is model.pkl pkl', 'start': 901.92, 'duration': 3.919}
+{'text': 'because we', 'start': 905.199, 'duration': 2.88}
+{'text': 'this is a pka pickle file so we are', 'start': 905.839, 'duration': 3.201}
+{'text': 'using the', 'start': 908.079, 'duration': 3.44}
+{'text': 'pickle extension here now i will run', 'start': 909.04, 'duration': 4.4}
+{'text': 'this code and after running this code', 'start': 911.519, 'duration': 3.281}
+{'text': 'you will see here', 'start': 913.44, 'duration': 3.519}
+{'text': 'we will get a new file and that file', 'start': 914.8, 'duration': 4.0}
+{'text': 'will be model.pkl', 'start': 916.959, 'duration': 10.88}
+{'text': "so i'll run this code", 'start': 918.8, 'duration': 9.039}
+{'text': 'you can see that we got a new file', 'start': 927.92, 'duration': 3.599}
+{'text': 'model.pkl', 'start': 930.12, 'duration': 3.719}
+{'text': 'we have successfully converted our model', 'start': 931.519, 'duration': 3.841}
+{'text': 'into a pickle file', 'start': 933.839, 'duration': 3.521}
+{'text': 'and we can also verify this from our', 'start': 935.36, 'duration': 5.12}
+{'text': "folder i'll open my folder here", 'start': 937.36, 'duration': 4.96}
+{'text': 'and in the folder you can see that we', 'start': 940.48, 'duration': 5.44}
+{'text': 'got this pickle file model.pkl', 'start': 942.32, 'duration': 6.4}
+{'text': "let's verify what files we have created", 'start': 945.92, 'duration': 5.039}
+{'text': 'we have created model.py', 'start': 948.72, 'duration': 5.119}
+{'text': 'we have also created model.pkl we', 'start': 950.959, 'duration': 5.281}
+{'text': 'already have index.html', 'start': 953.839, 'duration': 6.0}
+{'text': 'we already have iris.csv the only file', 'start': 956.24, 'duration': 5.519}
+{'text': 'left is app.pui', 'start': 959.839, 'duration': 3.761}
+{'text': 'this is the flash application and this', 'start': 961.759, 'duration': 4.0}
+{'text': 'is the last one now we are going to work', 'start': 963.6, 'duration': 4.88}
+{'text': 'on this flask application', 'start': 965.759, 'duration': 4.801}
+{'text': 'we will create our last python file that', 'start': 968.48, 'duration': 3.84}
+{'text': 'is the app file which will contain our', 'start': 970.56, 'duration': 2.959}
+{'text': 'flask code', 'start': 972.32, 'duration': 3.28}
+{'text': "i'll click on this folder ml model", 'start': 973.519, 'duration': 3.201}
+{'text': 'deployment', 'start': 975.6, 'duration': 4.32}
+{'text': 'right click new python file', 'start': 976.72, 'duration': 8.559}
+{'text': 'and the file name will be app dot py', 'start': 979.92, 'duration': 5.359}
+{'text': 'now this file will contain our flash', 'start': 985.519, 'duration': 5.361}
+{'text': "code let's import all the libraries", 'start': 987.519, 'duration': 6.481}
+{'text': 'import numpy', 'start': 990.88, 'duration': 6.16}
+{'text': 'as np from', 'start': 994.0, 'duration': 7.92}
+{'text': 'flask import', 'start': 997.04, 'duration': 7.44}
+{'text': 'flask', 'start': 1001.92, 'duration': 2.56}
+{'text': 'request', 'start': 1005.36, 'duration': 2.64}
+{'text': 'jsonify render template', 'start': 1009.279, 'duration': 8.321}
+{'text': 'when you use the flask environment you', 'start': 1015.04, 'duration': 4.56}
+{'text': 'will get this message here in pycharm', 'start': 1017.6, 'duration': 3.44}
+{'text': 'you are using the flask', 'start': 1019.6, 'duration': 4.479}
+{'text': 'framework and we are going to', 'start': 1021.04, 'duration': 5.759}
+{'text': 'make use of all the class here flask', 'start': 1024.079, 'duration': 5.6}
+{'text': 'request json if i random template', 'start': 1026.799, 'duration': 6.961}
+{'text': 'now first we will create the flask cap', 'start': 1029.679, 'duration': 4.081}
+{'text': 'to create a flask f you just have to', 'start': 1037.439, 'duration': 3.6}
+{'text': 'give one', 'start': 1039.679, 'duration': 4.88}
+{'text': "app name so i'll give the variable as", 'start': 1041.039, 'duration': 9.04}
+{'text': 'app and now from flask', 'start': 1044.559, 'duration': 5.52}
+{'text': 'we will call this underscore name', 'start': 1050.32, 'duration': 4.719}
+{'text': "that's it now you have created an app", 'start': 1055.2, 'duration': 4.96}
+{'text': 'you just have to give any name here', 'start': 1057.84, 'duration': 5.76}
+{'text': 'i am giving a name app here', 'start': 1060.16, 'duration': 3.44}
+{'text': 'now we are going to load the model this', 'start': 1063.76, 'duration': 4.72}
+{'text': 'pickle model we have to load this model', 'start': 1066.559, 'duration': 2.48}
+{'text': 'here', 'start': 1068.48, 'duration': 2.559}
+{'text': 'because we will make use of this model', 'start': 1069.039, 'duration': 3.601}
+{'text': 'to make predictions', 'start': 1071.039, 'duration': 5.201}
+{'text': 'so first we will load this model', 'start': 1072.64, 'duration': 3.6}
+{'text': 'load typical model', 'start': 1076.96, 'duration': 7.52}
+{'text': "i'll make one variable model", 'start': 1080.88, 'duration': 3.6}
+{'text': 'now we will load this model we also need', 'start': 1084.88, 'duration': 4.08}
+{'text': 'to import pickle', 'start': 1087.28, 'duration': 5.279}
+{'text': "so i'll import pickle here", 'start': 1088.96, 'duration': 3.599}
+{'text': 'now i will call pickle', 'start': 1092.72, 'duration': 6.079}
+{'text': 'dot load we will use the method load', 'start': 1095.84, 'duration': 4.8}
+{'text': 'from our class pickle', 'start': 1098.799, 'duration': 4.321}
+{'text': 'and then inside this we will pass our', 'start': 1100.64, 'duration': 3.12}
+{'text': 'method', 'start': 1103.12, 'duration': 3.679}
+{'text': 'open and inside this we have to pass', 'start': 1103.76, 'duration': 5.68}
+{'text': 'the model name and our model name is', 'start': 1106.799, 'duration': 3.441}
+{'text': 'model dot', 'start': 1109.44, 'duration': 4.0}
+{'text': 'pkl so we have to write this here', 'start': 1110.24, 'duration': 6.319}
+{'text': 'in double quotes model dot', 'start': 1113.44, 'duration': 7.4}
+{'text': 'pkl and then we have one more parameter', 'start': 1116.559, 'duration': 8.48}
+{'text': 'rb to read our file', 'start': 1120.84, 'duration': 7.64}
+{'text': 'so here in this line we are reading our', 'start': 1125.039, 'duration': 6.241}
+{'text': 'we are loading our model and saving it', 'start': 1128.48, 'duration': 4.64}
+{'text': 'in the variable model so whenever we', 'start': 1131.28, 'duration': 3.36}
+{'text': 'want to make prediction', 'start': 1133.12, 'duration': 4.72}
+{'text': 'we will use this variable model', 'start': 1134.64, 'duration': 6.32}
+{'text': 'next we will define the home page', 'start': 1137.84, 'duration': 5.28}
+{'text': 'and we will use our app to define the', 'start': 1140.96, 'duration': 3.36}
+{'text': 'home page so', 'start': 1143.12, 'duration': 4.559}
+{'text': 'i first call at at the rate', 'start': 1144.32, 'duration': 6.8}
+{'text': 'and then i will call this app from this', 'start': 1147.679, 'duration': 6.161}
+{'text': 'i will use the method route', 'start': 1151.12, 'duration': 5.439}
+{'text': 'and inside this in double quotes i will', 'start': 1153.84, 'duration': 4.24}
+{'text': 'put one slash here', 'start': 1156.559, 'duration': 4.081}
+{'text': 'this means this app will take me to the', 'start': 1158.08, 'duration': 3.68}
+{'text': 'home page', 'start': 1160.64, 'duration': 4.72}
+{'text': 'and then i will define a function', 'start': 1161.76, 'duration': 5.6}
+{'text': "define home so i'm defining a function", 'start': 1165.36, 'duration': 3.84}
+{'text': 'for home page', 'start': 1167.36, 'duration': 4.96}
+{'text': 'and this once it takes for the home page', 'start': 1169.2, 'duration': 5.92}
+{'text': 'it will call this function home and this', 'start': 1172.32, 'duration': 5.28}
+{'text': 'home function will return me', 'start': 1175.12, 'duration': 5.52}
+{'text': 'render template and inside this i will', 'start': 1177.6, 'duration': 3.84}
+{'text': 'pass our', 'start': 1180.64, 'duration': 4.0}
+{'text': 'html file which we have in this folder', 'start': 1181.44, 'duration': 3.84}
+{'text': 'template', 'start': 1184.64, 'duration': 3.039}
+{'text': 'we will define one more method and that', 'start': 1185.28, 'duration': 4.96}
+{'text': 'method is going to be predict method', 'start': 1187.679, 'duration': 5.681}
+{'text': 'first i will call this at the rate app', 'start': 1190.24, 'duration': 6.0}
+{'text': 'dot route and this time this will take', 'start': 1193.36, 'duration': 4.24}
+{'text': 'me to the page where the', 'start': 1196.24, 'duration': 3.52}
+{'text': 'predict method is defined so i will', 'start': 1197.6, 'duration': 3.84}
+{'text': 'write here double slash', 'start': 1199.76, 'duration': 3.84}
+{'text': 'slash and this time i will write the', 'start': 1201.44, 'duration': 3.119}
+{'text': 'method name', 'start': 1203.6, 'duration': 4.16}
+{'text': 'predict so when i will call this', 'start': 1204.559, 'duration': 5.12}
+{'text': 'this will take me to this predict method', 'start': 1207.76, 'duration': 6.159}
+{'text': 'page and the method is going to be', 'start': 1209.679, 'duration': 6.641}
+{'text': 'post', 'start': 1213.919, 'duration': 2.401}
+{'text': 'in flask we have two types of method the', 'start': 1217.2, 'duration': 3.76}
+{'text': 'get and post method', 'start': 1219.6, 'duration': 3.36}
+{'text': 'and here we are using the post method', 'start': 1220.96, 'duration': 4.16}
+{'text': 'because we are going to receive the', 'start': 1222.96, 'duration': 4.0}
+{'text': "independent variable values so that's", 'start': 1225.12, 'duration': 3.76}
+{'text': 'why we are using post here', 'start': 1226.96, 'duration': 3.68}
+{'text': 'and now we will define our predict', 'start': 1228.88, 'duration': 3.96}
+{'text': 'method define', 'start': 1230.64, 'duration': 5.2}
+{'text': 'predict', 'start': 1232.84, 'duration': 3.0}
+{'text': 'so when our app will go to this page', 'start': 1236.88, 'duration': 3.679}
+{'text': 'predict', 'start': 1239.36, 'duration': 3.52}
+{'text': 'this predict method will be called and', 'start': 1240.559, 'duration': 3.521}
+{'text': "first i'll make one", 'start': 1242.88, 'duration': 6.64}
+{'text': 'variable float underscore features', 'start': 1244.08, 'duration': 7.52}
+{'text': "so i'm making this variable float", 'start': 1249.52, 'duration': 4.159}
+{'text': 'features because you can see here that', 'start': 1251.6, 'duration': 4.48}
+{'text': 'our independent variables had got float', 'start': 1253.679, 'duration': 3.12}
+{'text': 'values', 'start': 1256.08, 'duration': 3.599}
+{'text': 'that is the values are in decimals 5.1', 'start': 1256.799, 'duration': 3.841}
+{'text': '3.0', 'start': 1259.679, 'duration': 3.681}
+{'text': "1.3 the values are decimal that's why", 'start': 1260.64, 'duration': 3.919}
+{'text': "i'm making a", 'start': 1263.36, 'duration': 3.52}
+{'text': "variable float features where i'm going", 'start': 1264.559, 'duration': 3.36}
+{'text': 'to convert', 'start': 1266.88, 'duration': 4.48}
+{'text': 'all the numbers into the float variables', 'start': 1267.919, 'duration': 6.561}
+{'text': "so i'll make a list comprehension", 'start': 1271.36, 'duration': 6.88}
+{'text': 'and i will call a loop here follow', 'start': 1274.48, 'duration': 8.48}
+{'text': 'float of x', 'start': 1278.24, 'duration': 4.72}
+{'text': 'for x in request', 'start': 1283.44, 'duration': 7.52}
+{'text': 'dot form dot', 'start': 1287.28, 'duration': 8.0}
+{'text': 'values here i am saying that', 'start': 1290.96, 'duration': 7.28}
+{'text': 'when i am going to receive the request', 'start': 1295.28, 'duration': 4.0}
+{'text': 'that is the', 'start': 1298.24, 'duration': 3.2}
+{'text': 'independent variables values that is', 'start': 1299.28, 'duration': 3.84}
+{'text': 'these values when i will receive these', 'start': 1301.44, 'duration': 2.56}
+{'text': 'values', 'start': 1303.12, 'duration': 2.88}
+{'text': 'i am going to take those values and', 'start': 1304.0, 'duration': 4.4}
+{'text': 'convert those values in float', 'start': 1306.0, 'duration': 5.039}
+{'text': 'and then save the those values in the', 'start': 1308.4, 'duration': 4.399}
+{'text': 'variable float features', 'start': 1311.039, 'duration': 3.361}
+{'text': 'so someone will send us these', 'start': 1312.799, 'duration': 3.601}
+{'text': 'independent variable values these values', 'start': 1314.4, 'duration': 2.96}
+{'text': 'will be sent', 'start': 1316.4, 'duration': 3.84}
+{'text': 'and they will send an integer so we are', 'start': 1317.36, 'duration': 4.64}
+{'text': 'going to convert that integer', 'start': 1320.24, 'duration': 3.76}
+{'text': 'into float and then save it in the', 'start': 1322.0, 'duration': 4.48}
+{'text': 'variable float features', 'start': 1324.0, 'duration': 4.48}
+{'text': "and the next step will be features i'll", 'start': 1326.48, 'duration': 5.6}
+{'text': 'make one variable features', 'start': 1328.48, 'duration': 5.28}
+{'text': 'and now i will make one more list', 'start': 1332.08, 'duration': 3.36}
+{'text': 'comprehension', 'start': 1333.76, 'duration': 4.08}
+{'text': 'and now here i am going to convert this', 'start': 1335.44, 'duration': 4.8}
+{'text': 'float into arrays', 'start': 1337.84, 'duration': 5.76}
+{'text': 'so i will call from numpy dot', 'start': 1340.24, 'duration': 6.64}
+{'text': 'array and then i will pass', 'start': 1343.6, 'duration': 5.92}
+{'text': 'our variable float features which we', 'start': 1346.88, 'duration': 4.72}
+{'text': "have saved above here so i'll pass this", 'start': 1349.52, 'duration': 4.24}
+{'text': 'variable here', 'start': 1351.6, 'duration': 5.84}
+{'text': 'float features so here in this step', 'start': 1353.76, 'duration': 6.159}
+{'text': 'i am just converting this float features', 'start': 1357.44, 'duration': 5.119}
+{'text': 'into numpy arrays', 'start': 1359.919, 'duration': 5.041}
+{'text': 'now the next i will make one variable', 'start': 1362.559, 'duration': 5.041}
+{'text': 'prediction', 'start': 1364.96, 'duration': 2.64}
+{'text': 'now i am going to make the prediction', 'start': 1369.12, 'duration': 4.0}
+{'text': 'and to make prediction we have to call', 'start': 1371.28, 'duration': 4.24}
+{'text': 'our model and our model is saved in this', 'start': 1373.12, 'duration': 3.679}
+{'text': 'variable model', 'start': 1375.52, 'duration': 3.44}
+{'text': 'so we will call our variable model and', 'start': 1376.799, 'duration': 3.201}
+{'text': 'from this', 'start': 1378.96, 'duration': 4.4}
+{'text': 'we will have to use the method predict', 'start': 1380.0, 'duration': 4.96}
+{'text': 'because to make prediction we have to', 'start': 1383.36, 'duration': 3.76}
+{'text': 'use the method predict so we are calling', 'start': 1384.96, 'duration': 3.44}
+{'text': 'the method', 'start': 1387.12, 'duration': 4.24}
+{'text': 'predict here and inside this we will', 'start': 1388.4, 'duration': 5.759}
+{'text': 'pass our variable features here', 'start': 1391.36, 'duration': 5.92}
+{'text': 'because features contain the', 'start': 1394.159, 'duration': 5.281}
+{'text': 'values of our independent variable so', 'start': 1397.28, 'duration': 4.16}
+{'text': 'these are independent variables', 'start': 1399.44, 'duration': 4.239}
+{'text': 'and this feature will contain these', 'start': 1401.44, 'duration': 3.119}
+{'text': 'values', 'start': 1403.679, 'duration': 4.0}
+{'text': 'for example 4.9 3.0 1.4', 'start': 1404.559, 'duration': 6.881}
+{'text': '0.2 so whenever we pass any number here', 'start': 1407.679, 'duration': 5.601}
+{'text': 'those number first will be converted', 'start': 1411.44, 'duration': 3.52}
+{'text': 'into float and then', 'start': 1413.28, 'duration': 4.399}
+{'text': 'those float will be converted into numpy', 'start': 1414.96, 'duration': 3.839}
+{'text': 'array and store', 'start': 1417.679, 'duration': 3.681}
+{'text': 'in this variable features and then using', 'start': 1418.799, 'duration': 4.561}
+{'text': 'this feature we will make the prediction', 'start': 1421.36, 'duration': 5.439}
+{'text': 'and save in the variable prediction here', 'start': 1423.36, 'duration': 6.72}
+{'text': 'now once the prediction is done we will', 'start': 1426.799, 'duration': 4.48}
+{'text': 'call', 'start': 1430.08, 'duration': 3.52}
+{'text': 'we will use the method return and return', 'start': 1431.279, 'duration': 3.201}
+{'text': 'will call us', 'start': 1433.6, 'duration': 4.0}
+{'text': 'render template this class random', 'start': 1434.48, 'duration': 5.92}
+{'text': 'template and this will take us to the', 'start': 1437.6, 'duration': 4.079}
+{'text': 'index', 'start': 1440.4, 'duration': 5.92}
+{'text': 'html index index.html page', 'start': 1441.679, 'duration': 8.48}
+{'text': 'and there we will show our values', 'start': 1446.32, 'duration': 8.32}
+{'text': 'so we will use prediction underscore', 'start': 1450.159, 'duration': 9.201}
+{'text': 'text this is a parameter and here we can', 'start': 1454.64, 'duration': 6.24}
+{'text': 'type anything', 'start': 1459.36, 'duration': 4.48}
+{'text': 'for example uh because this model is', 'start': 1460.88, 'duration': 6.48}
+{'text': 'related to iris flower so i will write', 'start': 1463.84, 'duration': 8.24}
+{'text': 'the flower species', 'start': 1467.36, 'duration': 8.08}
+{'text': 'is then', 'start': 1472.08, 'duration': 6.88}
+{'text': 'dot format then i will call', 'start': 1475.44, 'duration': 6.64}
+{'text': 'prediction what i am doing here is', 'start': 1478.96, 'duration': 5.599}
+{'text': 'once i get the prediction it will take', 'start': 1482.08, 'duration': 4.199}
+{'text': 'me to this page', 'start': 1484.559, 'duration': 4.72}
+{'text': 'index.html and then it will print this', 'start': 1486.279, 'duration': 3.64}
+{'text': 'text', 'start': 1489.279, 'duration': 3.76}
+{'text': 'as the heading the flower species is and', 'start': 1489.919, 'duration': 4.801}
+{'text': 'then the species name', 'start': 1493.039, 'duration': 3.681}
+{'text': 'so whatever species we will get in the', 'start': 1494.72, 'duration': 4.16}
+{'text': 'prediction that species name will be', 'start': 1496.72, 'duration': 4.4}
+{'text': 'printed and along with that this', 'start': 1498.88, 'duration': 4.08}
+{'text': 'statement will be printed we can put any', 'start': 1501.12, 'duration': 4.64}
+{'text': 'statement here', 'start': 1502.96, 'duration': 5.68}
+{'text': 'i have to remove this l from here and i', 'start': 1505.76, 'duration': 3.519}
+{'text': 'have to put', 'start': 1508.64, 'duration': 4.399}
+{'text': 'l here everything is completed we just', 'start': 1509.279, 'duration': 5.601}
+{'text': 'have to write one more line', 'start': 1513.039, 'duration': 5.041}
+{'text': 'and this is going to be if', 'start': 1514.88, 'duration': 7.679}
+{'text': 'name is equal to', 'start': 1518.08, 'duration': 6.8}
+{'text': 'main', 'start': 1522.559, 'duration': 2.321}
+{'text': 'then we will call our app app dot', 'start': 1526.88, 'duration': 6.48}
+{'text': 'run and debug', 'start': 1530.24, 'duration': 6.96}
+{'text': "is equal to true that's it we have", 'start': 1533.36, 'duration': 5.84}
+{'text': 'completed our flash cap', 'start': 1537.2, 'duration': 4.88}
+{'text': "now i'll right click i'll right click", 'start': 1539.2, 'duration': 3.76}
+{'text': 'here', 'start': 1542.08, 'duration': 4.479}
+{'text': 'and then click on app', 'start': 1542.96, 'duration': 3.599}
+{'text': 'i got type error type error init got an', 'start': 1553.039, 'duration': 6.401}
+{'text': 'unexpected keyword argument method here', 'start': 1556.48, 'duration': 4.48}
+{'text': 'instead of method i have to type', 'start': 1559.44, 'duration': 4.88}
+{'text': "methods i have to put s here i'll put s", 'start': 1560.96, 'duration': 4.56}
+{'text': 'here', 'start': 1564.32, 'duration': 4.08}
+{'text': 'and now i will run this code again right', 'start': 1565.52, 'duration': 3.44}
+{'text': 'click', 'start': 1568.4, 'duration': 4.56}
+{'text': "click on run app and now let's see", 'start': 1568.96, 'duration': 7.04}
+{'text': 'so now our app has started and it', 'start': 1572.96, 'duration': 5.599}
+{'text': 'is running on this port so you can see', 'start': 1576.0, 'duration': 3.6}
+{'text': 'here we have', 'start': 1578.559, 'duration': 5.761}
+{'text': 'uh some numbers here http dot 127.0.1', 'start': 1579.6, 'duration': 7.36}
+{'text': 'is to 5000 so this is the port on which', 'start': 1584.32, 'duration': 3.76}
+{'text': 'our app is running', 'start': 1586.96, 'duration': 4.079}
+{'text': 'and this is the default port on flask', 'start': 1588.08, 'duration': 4.88}
+{'text': 'now we have to click on this', 'start': 1591.039, 'duration': 4.961}
+{'text': "port so i'll click on this http and this", 'start': 1592.96, 'duration': 3.44}
+{'text': 'will', 'start': 1596.0, 'duration': 2.88}
+{'text': "open me in a new browser i'll click on", 'start': 1596.4, 'duration': 4.72}
+{'text': 'this', 'start': 1598.88, 'duration': 2.24}
+{'text': 'now here you can see that we got the app', 'start': 1604.08, 'duration': 3.28}
+{'text': 'here', 'start': 1606.72, 'duration': 3.36}
+{'text': 'flower class prediction if i go back', 'start': 1607.36, 'duration': 3.679}
+{'text': 'here', 'start': 1610.08, 'duration': 5.28}
+{'text': 'you can see we have successfully run our', 'start': 1611.039, 'duration': 6.561}
+{'text': 'app and it is running on this port', 'start': 1615.36, 'duration': 4.559}
+{'text': 'now we just have to put the independent', 'start': 1617.6, 'duration': 3.76}
+{'text': 'variable numbers here', 'start': 1619.919, 'duration': 3.76}
+{'text': 'and this will predict class for us for', 'start': 1621.36, 'duration': 4.64}
+{'text': 'example i put', 'start': 1623.679, 'duration': 5.961}
+{'text': 'for 1.2', 'start': 1626.0, 'duration': 8.64}
+{'text': '5.1 4.8', 'start': 1629.64, 'duration': 8.44}
+{'text': 'and 0.1 and if i click on this predict', 'start': 1634.64, 'duration': 5.919}
+{'text': 'this will predict the class of our', 'start': 1638.08, 'duration': 5.04}
+{'text': "flower iris i'll click on this method", 'start': 1640.559, 'duration': 4.321}
+{'text': 'predict', 'start': 1643.12, 'duration': 3.76}
+{'text': 'in the output you can see that it is', 'start': 1644.88, 'duration': 3.919}
+{'text': 'saying that the flower species', 'start': 1646.88, 'duration': 4.88}
+{'text': 'is virginica and this statement the', 'start': 1648.799, 'duration': 4.0}
+{'text': 'flower species', 'start': 1651.76, 'duration': 4.08}
+{'text': 'is which we have defined here you can', 'start': 1652.799, 'duration': 3.841}
+{'text': 'see here', 'start': 1655.84, 'duration': 3.04}
+{'text': 'in prediction text i have defined that', 'start': 1656.64, 'duration': 3.919}
+{'text': 'the flower species is', 'start': 1658.88, 'duration': 3.2}
+{'text': 'so that is why here we are getting the', 'start': 1660.559, 'duration': 3.12}
+{'text': 'flower species', 'start': 1662.08, 'duration': 3.28}
+{'text': 'and then we got the prediction here', 'start': 1663.679, 'duration': 3.841}
+{'text': 'whatever prediction we are getting here', 'start': 1665.36, 'duration': 3.919}
+{'text': 'we are calling this along with this', 'start': 1667.52, 'duration': 3.759}
+{'text': 'statement now if i put', 'start': 1669.279, 'duration': 3.52}
+{'text': "some different number let's say i will", 'start': 1671.279, 'duration': 3.441}
+{'text': 'put 0 0 0', 'start': 1672.799, 'duration': 6.0}
+{'text': '0 0 0 now here you can see that', 'start': 1674.72, 'duration': 7.28}
+{'text': 'we got the flower system virginica if i', 'start': 1678.799, 'duration': 5.921}
+{'text': 'click on this method predict', 'start': 1682.0, 'duration': 4.559}
+{'text': 'now we got the flower species is', 'start': 1684.72, 'duration': 3.04}
+{'text': 'versicolor', 'start': 1686.559, 'duration': 3.441}
+{'text': 'so we have successfully made the flask', 'start': 1687.76, 'duration': 4.72}
+{'text': 'app and we have deployed our machine', 'start': 1690.0, 'duration': 4.559}
+{'text': 'learning model', 'start': 1692.48, 'duration': 3.76}
+{'text': 'so here you can see that these are the', 'start': 1694.559, 'duration': 4.0}
+{'text': 'steps first we have to develop a machine', 'start': 1696.24, 'duration': 3.36}
+{'text': 'learning model', 'start': 1698.559, 'duration': 3.521}
+{'text': 'then we have to convert that file into a', 'start': 1699.6, 'duration': 3.679}
+{'text': 'pickle object', 'start': 1702.08, 'duration': 2.88}
+{'text': 'once we convert that into a pickle', 'start': 1703.279, 'duration': 4.241}
+{'text': 'object we have to make one flask cap', 'start': 1704.96, 'duration': 5.12}
+{'text': 'and once we make a flask cap in flask', 'start': 1707.52, 'duration': 3.519}
+{'text': 'cap we have to', 'start': 1710.08, 'duration': 3.44}
+{'text': 'load that model that pickle object then', 'start': 1711.039, 'duration': 3.921}
+{'text': 'we have to define the', 'start': 1713.52, 'duration': 4.72}
+{'text': 'predict method and then using that', 'start': 1714.96, 'duration': 4.56}
+{'text': 'predict method', 'start': 1718.24, 'duration': 3.679}
+{'text': "we can make the prediction i'm sure", 'start': 1719.52, 'duration': 4.48}
+{'text': 'after watching the complete tutorial now', 'start': 1721.919, 'duration': 4.721}
+{'text': 'you are comfortable on developing and', 'start': 1724.0, 'duration': 4.0}
+{'text': 'deploying your model', 'start': 1726.64, 'duration': 3.279}
+{'text': 'if you face any problem you can write', 'start': 1728.0, 'duration': 3.76}
+{'text': 'down in the comment section and i will', 'start': 1729.919, 'duration': 4.321}
+{'text': 'try to help you i hope you enjoyed this', 'start': 1731.76, 'duration': 4.24}
+{'text': 'video if you like my video please', 'start': 1734.24, 'duration': 3.28}
+{'text': 'subscribe to my channel thank you for', 'start': 1736.0, 'duration': 3.84}
+{'text': 'watching', 'start': 1737.52, 'duration': 2.32}

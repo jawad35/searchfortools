@@ -1,0 +1,36 @@
+.htmlviewer {
+    height: 500px;
+    overflow: auto;
+    background-color: #141515;
+    color: white;
+    text-align: start;
+    position: relative;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.htmlcodecopybtn {
+    // color: #1e81b0;
+    color: white;
+    display: flex;
+    justify-content: end;
+    background-color: rgb(85, 173, 238);
+    padding: 10px 20px;
+    position: sticky;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.htmlcodecopybtn {
+    // color: #1e81b0;
+    color: white;
+    display: flex;
+    justify-content: end;
+    background-color: rgb(85, 173, 238);
+    padding: 10px 20px;
+    position: sticky;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.htmlcodecopybtn:hover {
+    color: #1e81b0;
+}

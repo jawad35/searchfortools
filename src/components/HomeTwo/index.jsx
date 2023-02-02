@@ -11,13 +11,20 @@ import PortfolioTwo from './PortfolioTwo';
 import ServicesTwo from './ServicesTwo';
 import TeamTwo from './TeamTwo';
 import TestimonialTwo from './TestimonialTwo';
-
+import { positions, Provider} from "react-alert";
+import AlertTemplate from "react-alert-template-basic";
 const HomeTwoMain = () => {
+  const options = {
+    timeout: 5000,
+    position: positions.BOTTOM_CENTER
+  };
   return (
     <>
       <Header HeaderTwo={true} />
       <HeroSlider/>
-      <ServicesTwo/>
+      <Provider template={AlertTemplate} {...options}>
+    <ServicesTwo/>
+  </Provider>
       {/* <AboutTwo/> */}
       {/* <CounterTwo/> */}
       {/* <PortfolioTwo/> */}

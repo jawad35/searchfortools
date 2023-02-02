@@ -5,18 +5,18 @@ const FooterTwo = () => {
     <>
       <footer>
         <div className="tpfooter-area box-plr-85">
-          <div className="footer-contact-wrapper footer-contact-overlay include-bg pt-115 pb-75" style={{backgroundImage:'url(assets/img/contact/contact-bg.jpg)',backgroundSize:'cover',backgroundPosition:'center'}}>
+          <div className="footer-contact-wrapper include-bg pt-115 pb-75" style={{background:'#154c79'}}>
             <div className="container">
               <div className="row">
                 <div className="col-xl-6 col-lg-6 col-md-6">
                   <div className="footer__widget footer-col-1">
                     <div className="tp-section-title">
-                      <span className="tp-sub-title mb-15">#Contact INfo</span>
+                      <span className="tp-sub-title mb-15">Contact INfo</span>
                       <h2 className="tp-title tp-title-df mb-20">Any Question?</h2>
-                      <p>Methods and techniques to taking raw data - mining for insights and years of experience.</p>
+                      <p>If you have any query feel free to contact with us thanks</p>
                     </div>
                     <div className="footer__lists mt-40">
-                      <div className="footer__list-item mb-40">
+                      {/* <div className="footer__list-item mb-40">
                         <div className="footer__list-icon">
                           <i className="fa-solid fa-location-dot"></i>
                         </div>
@@ -24,14 +24,13 @@ const FooterTwo = () => {
                           <p><a href="https://goo.gl/maps/iAY7xEk5PGbqwBWf6" target="blank">Ta-134/A, Gulshan Badda Link Rd,
                             Nya 10982 USA </a></p>
                         </div>
-                      </div>
+                      </div> */}
                       <div className="footer__list-item mb-40">
                         <div className="footer__list-icon">
                           <i className="fas fa-envelope"></i>
                         </div>
                         <div className="footer__list-text">
-                          <p><a href="mailto:rasalinawillam@gmail.com">rasalinawillam@gmail.com</a></p>
-                          <p><a href="mailto:info@gmail.com">info@gmail.com</a></p>
+                          <p><a href="mailto:searchfortoolsofficial@gmail.com">searchfortoolsofficial@gmail.com</a></p>
                         </div>
                       </div>
                       <div className="footer__list-item mb-40">
@@ -39,8 +38,8 @@ const FooterTwo = () => {
                           <i className="fa-solid fa-phone-flip"></i>
                         </div>
                         <div className="footer__list-text">
-                          <p><a href="tel:+08987878773345">+08 98787 8773 345</a></p>
-                          <p><a href="tel:+08987878773345">+08 98787 8773 345</a></p>
+                          <p><a href="tel:+923410498631">+923410498631</a></p>
+                          <p><a href="tel:+923445753129">+923445753129</a></p>
                         </div>
                       </div>
                     </div>
@@ -49,7 +48,7 @@ const FooterTwo = () => {
                 <div className="col-xl-6 col-lg-6 col-md-6">
                   <div className="footer__widget footer-col-2">
                     <div className="tp-section-title">
-                      <span className="tp-sub-title mb-15">#Get In Touch</span>
+                      <span className="tp-sub-title mb-15">Get In Touch</span>
                       <h2 className="tp-title tp-title-df mb-20">Let’s Say Hi</h2>
                     </div>
                     <form id="contact-form" action="mail.php" method="POST">
@@ -78,7 +77,7 @@ const FooterTwo = () => {
             <div className="row align-items-center">
               <div className="col-xl-12">
                 <div className="footer-copyright-text">
-                  <p>© 2022 Nerox - Agency & Portfolio Design . All Rights Reserved.</p>
+                  <p>© 2022 Searchfortools . All Rights Reserved.</p>
                 </div>
               </div>
             </div>

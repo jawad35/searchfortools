@@ -1,0 +1,41 @@
+.invoice-container {
+    overflow-wrap: break-word;
+    text-transform: capitalize;
+}
+.invoice-container p {
+    margin: 0px;
+}
+.user-invoice-details {
+    // margin-left: 10px;
+}
+.user-invoice-details p {
+    margin: 0px;
+}
+
+.invoice-date {
+    // border: 1px solid red;
+}
+.invoice-date strong {
+    // margin-left: 10px;
+}
+.invoice-preview {
+    box-shadow: 0px 30px 50px 0px rgb(1 11 60 / 10%);
+    padding: 20px;
+}
+.invoice-terms {
+    margin-top: 50px;
+}
+.clear-invoice-btn {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.printInvoiceBtn {
+    background-color: var(--tp-theme-2);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}

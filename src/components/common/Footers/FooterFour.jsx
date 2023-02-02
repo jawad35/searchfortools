@@ -32,7 +32,7 @@ const FooterFour = () => {
                       </div>
                       <div className="footer__info-content">
                         <p>
-                          <a href="mailto:infoweb@gmail.com">Rasalinawillam@gmail.com</a>
+                          <a href="mailto:infoweb@gmail.com">searchfortoolsofficial@gmail.com</a>
                         </p>
                         <p>
                           <a href="mailto:infoweb@gmail.com">infoweb@gmail.com</a>

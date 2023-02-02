@@ -1,0 +1,56 @@
+.tag-container {
+    margin-top: 10px;
+}
+
+.tagsItem {
+    background-color: #f3f4f8;
+    border: 2px solid #f3f4f8;
+    border-radius: 10px;
+    padding: 0px 10px;
+    display: inline-flex;
+    align-items: center;
+    margin: 5px;
+}
+.tag-remove-btn {
+    margin-left: 8px;
+    color: #55adee;
+    font-size: 15px;
+    font-weight: 600;
+}
+.copy-all-tags-btn {
+    background-color: #e28743;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: bolder;
+    color: white;
+}
+.alert-info-msg {
+    background: #d1ecf1;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    color: #141515;
+    margin-top: 10px;
+}
+
+.alert-success-msg {
+    background: rgba(15, 145, 15, 0.733);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
+}
+
+.alert-danger-msg {
+    background: #ff5f57;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
+}
+
+.tag-value:hover {
+    cursor: grab;
+}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react"
 
 const CtaImages = () => {
   return (
@@ -24,7 +24,7 @@ const CtaImages = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default CtaImages;
+export default CtaImages

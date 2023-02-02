@@ -1,0 +1,20 @@
+.script-duration-box {
+    background-color: var(--tp-blue-2);
+    padding: 20px;
+    margin: 20px 0px;
+    border-radius: 5px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.script-duration-box .script-text {
+    color: white;
+}
+
+.script-duration-box .script-result {
+    background-color: white;
+    padding: 20px;
+}
+.script-result-text {
+    color: black;
+}

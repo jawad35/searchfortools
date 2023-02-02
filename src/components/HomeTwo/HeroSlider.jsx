@@ -36,9 +36,9 @@ const HeroSlider = () => {
                   {sliderData.map(item => {
                     return (
                       <SwiperSlide key={item.id}>
-                        <div className="tpagency__slider-item tpagency__slider-height text-center d-flex align-items-center" style={{ backgroundImage: 'url(assets/img/slider/slider-img-1.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+                        <div className="tpagency__slider-item tpagency__slider-height text-center d-flex align-items-center" style={{ background:'#55adee'}}>
                           <div className="tp-agency-slider-inner">
-                            <h2 className="tpagency-title">Introduce Our Creative <br /> Digital Agency.</h2>
+                            <h2 className="tpagency-title">Introduce Our Creative <br /> Digital Tools</h2>
                             <div className="tpagency-button mt-60">
                               <Link href="/services">
                                 <a className="tp-white-btn">See Nerox Project</a>

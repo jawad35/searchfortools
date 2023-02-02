@@ -15,7 +15,7 @@ const HeroAreaEleven = () => {
             <div className="col-xl-4 col-lg-5">
               <div className="tpmodel-hero-contcat-info">
                 <div className="tpmodel-mail-address">
-                  <a href="mailto:rasalinawillam@gmail.com">Rasalinawillam@gmail.com</a>
+                  <a href="mailto:searchfortoolsofficial@gmail.com">searchfortoolsofficial@gmail.com</a>
                   <a href="mailto:infoweb@gmail.com">infoweb@gmail.com</a>
                 </div>
               </div>

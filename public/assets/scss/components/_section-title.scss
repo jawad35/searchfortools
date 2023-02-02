@@ -8,7 +8,7 @@
     font-size: 16px;
     font-weight: var(--tp-fw-bold);
     text-transform: uppercase;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(260.52deg, #1C99FE -4.98%, #7644FF 48.42%, #FD4766 96.9%);
+    background: #1C99FE;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -27,7 +27,7 @@
     &-2{
         color: var(--tp-common-white);
         display: inline-block;
-        background: linear-gradient(260.52deg, #1C99FE -4.98%, #7644FF 48.42%, #FD4766 96.9%);
+        background: #fcba03;
         border-radius: 5px;
         padding: 6px 12px;
         line-height: 15px;
