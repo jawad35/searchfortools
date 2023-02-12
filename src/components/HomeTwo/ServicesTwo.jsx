@@ -1,5 +1,8 @@
+import dynamic from "next/dynamic"
 import servicesData from "../../data/servicesData"
-import ServiceWrapper from "../ServicesPageItems/ServiceWrapper"
+const ServiceWrapper = dynamic(() =>
+  import("../ServicesPageItems/ServiceWrapper")
+)
 
 const ServicesTwo = () => {
   return (
@@ -61,4 +64,4 @@ const ServicesTwo = () => {
   )
 }
 
-export default ServicesTwo
+export default dynamic(() => Promise.resolve(ServicesTwo), { ssr: false })

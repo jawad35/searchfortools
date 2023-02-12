@@ -1,28 +1,22 @@
-import React from 'react';
-import BrandArea from '../common/BrandArea';
-import Breadcrumb from '../common/Breadcrumb';
-import FooterTwo from '../common/Footers/FooterTwo';
-import Header from '../common/Header';
-import TestimonialFour from '../Home-four/TestimonialFour';
-import AboutArea from './AboutArea';
-import AboutCounter from './AboutCounter';
-import CtaImages from './CtaImages';
-import NeroxAwards from './NeroxAwards';
+import React from "react"
+import Breadcrumb from "../common/Breadcrumb"
+import FooterTwo from "../common/Footers/FooterTwo"
+import Header from "../common/Header"
+import AboutArea from "./AboutArea"
+import AboutCounter from "./AboutCounter"
+import CtaImages from "./CtaImages"
 
 const index = () => {
   return (
     <>
-      <Header/>
+      <Header />
       <Breadcrumb title="ABOUT NEROX" subtitle=" About Us" />
-      <AboutArea/>
-      <AboutCounter/>
-      <CtaImages/>
-      {/* <BrandArea brand="-2" about="about-brand" /> */}
-      {/* <TestimonialFour/> */}
-      {/* <NeroxAwards/> */}
-      <FooterTwo/>
+      <AboutArea />
+      <AboutCounter />
+      <CtaImages />
+      <FooterTwo />
     </>
-  );
-};
+  )
+}
 
-export default index;
+export default dynamic(() => Promise.resolve(index), { ssr: false })

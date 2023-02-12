@@ -1,10 +1,10 @@
 import React from "react"
-import Breadcrumb from "../../components/common/Breadcrumb"
 import FooterTwo from "../../components/common/Footers/FooterTwo"
 import Header from "../../components/common/Header"
 import SEO from "../../components/seo"
 import HowToUse from "../../components/common/How-to-use/HowToUse"
 import VatCalculator from "../../components/AllServices/VatCalculator/VatCalculator"
+import dynamic from "next/dynamic"
 
 const VatCalculatorPage = () => {
   return (
@@ -18,5 +18,6 @@ const VatCalculatorPage = () => {
     </>
   )
 }
-
-export default VatCalculatorPage
+export default dynamic(() => Promise.resolve(VatCalculatorPage), {
+  ssr: false
+})

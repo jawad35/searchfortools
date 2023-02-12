@@ -5,8 +5,9 @@ import Header from "../../components/common/Header"
 import SEO from "../../components/seo"
 import YouTubeTagGetter from "../../components/AllServices/YouTubeTagsGetter/YouTubeTagGetter"
 import HowToUse from "../../components/common/How-to-use/HowToUse"
+import dynamic from "next/dynamic"
 
-const YouTubeTags = () => {
+const YouTubeTagsGenerator = () => {
   return (
     <>
       <SEO pageTitle="Youtube Tags Extractor" />
@@ -19,4 +20,6 @@ const YouTubeTags = () => {
   )
 }
 
-export default YouTubeTags
+export default dynamic(() => Promise.resolve(YouTubeTagsGenerator), {
+  ssr: false
+})

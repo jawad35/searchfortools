@@ -163,11 +163,15 @@ const ContactArea = () => {
                     <div className="contact__info-text">
                       <h4>Email us directly</h4>
                       <p>
-                        <a href="mailto:support@nerox.com">support@nerox.com</a>
+                        <a href="mailto:support@nerox.com">
+                          searchfortoolsofficial@gmail.com
+                        </a>
                       </p>
-                      <p>
-                        <a href="mailto:info@nerox.com"> info@nerox.com</a>
-                      </p>
+                      {/* <p>
+                        <a href="mailto:info@nerox.com">
+                          searchfortoolsofficial@gmail.com
+                        </a>
+                      </p> */}
                     </div>
                   </div>
                   <div className="contact__info-item d-flex align-items-start mb-35">
@@ -182,10 +186,10 @@ const ContactArea = () => {
                     <div className="contact__info-text">
                       <h4>Phone</h4>
                       <p>
-                        <a href="tel:+(426)-742-26-44">+(426) 742 26 44</a>
+                        <a href="tel:+(426)-742-26-44">+(341) 049 86 31</a>
                       </p>
                       <p>
-                        <a href="tel:+(224)-762-442-32">+(224) 762 442 32</a>
+                        <a href="tel:+(224)-762-442-32">+(344) 575 31 29</a>
                       </p>
                     </div>
                   </div>

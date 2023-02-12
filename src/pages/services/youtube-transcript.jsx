@@ -1,3 +1,4 @@
+import dynamic from "next/dynamic"
 import React from "react"
 import YouTubeTranscriptor from "../../components/AllServices/YoutubeTranscriptor/YouTubeTranscriptor"
 import servicesData from "../../data/servicesData"
@@ -13,4 +14,6 @@ const YoutubeTranscriptorPage = () => {
   )
 }
 
-export default YoutubeTranscriptorPage
+export default dynamic(() => Promise.resolve(YoutubeTranscriptorPage), {
+  ssr: false
+})

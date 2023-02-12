@@ -1,3 +1,4 @@
+import dynamic from "next/dynamic"
 import React from "react"
 import YouTubeTagGetter from "../../components/AllServices/YouTubeTagsGetter/YouTubeTagGetter"
 import servicesData from "../../data/servicesData"
@@ -12,4 +13,6 @@ const YouTubeTags = () => {
   )
 }
 
-export default YouTubeTags
+export default dynamic(() => Promise.resolve(YouTubeTags), {
+  ssr: false
+})

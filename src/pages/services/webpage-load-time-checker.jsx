@@ -1,3 +1,4 @@
+import dynamic from "next/dynamic"
 import React from "react"
 import WebPageLoadTimeChecker from "../../components/AllServices/WebPageLoadTimeChecker/WebPageLoadTimeChecker"
 import servicesData from "../../data/servicesData"
@@ -11,4 +12,6 @@ const YouTubeTags = () => {
   )
 }
 
-export default YouTubeTags
+export default dynamic(() => Promise.resolve(YouTubeTags), {
+  ssr: false
+})

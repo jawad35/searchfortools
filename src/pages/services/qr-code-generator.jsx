@@ -8,6 +8,7 @@ import InternetChecker from "../../components/AllServices/InternetSpeedCheckerCo
 import { ToastContainer } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
 import QRCodeGenerator from "../../components/AllServices/QrCodeGenerator/QRCodeGenerator"
+import dynamic from "next/dynamic"
 
 const InternetSpeedChecker = () => {
   return (
@@ -23,4 +24,6 @@ const InternetSpeedChecker = () => {
   )
 }
 
-export default InternetSpeedChecker
+export default dynamic(() => Promise.resolve(InternetSpeedChecker), {
+  ssr: false
+})

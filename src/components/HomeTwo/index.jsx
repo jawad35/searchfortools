@@ -1,30 +1,23 @@
-import React from 'react';
-import BrandArea from '../common/BrandArea';
-import Header from '../common/Header';
-import AboutTwo from './AboutTwo';
-import BlogTwo from './BlogTwo';
-import CounterTwo from './CounterTwo';
-import CtaTwo from './CtaTwo';
-import FooterTwo from './HomeTwoFooter';
-import HeroSlider from './HeroSlider';
-import PortfolioTwo from './PortfolioTwo';
-import ServicesTwo from './ServicesTwo';
-import TeamTwo from './TeamTwo';
-import TestimonialTwo from './TestimonialTwo';
-import { positions, Provider} from "react-alert";
-import AlertTemplate from "react-alert-template-basic";
+import React from "react"
+import Header from "../common/Header"
+import FooterTwo from "./HomeTwoFooter"
+import HeroSlider from "./HeroSlider"
+import ServicesTwo from "./ServicesTwo"
+import { positions, Provider } from "react-alert"
+import AlertTemplate from "react-alert-template-basic"
+import dynamic from "next/dynamic"
 const HomeTwoMain = () => {
   const options = {
     timeout: 5000,
     position: positions.BOTTOM_CENTER
-  };
+  }
   return (
     <>
       <Header HeaderTwo={true} />
-      <HeroSlider/>
+      <HeroSlider />
       <Provider template={AlertTemplate} {...options}>
-    <ServicesTwo/>
-  </Provider>
+        <ServicesTwo />
+      </Provider>
       {/* <AboutTwo/> */}
       {/* <CounterTwo/> */}
       {/* <PortfolioTwo/> */}
@@ -33,9 +26,9 @@ const HomeTwoMain = () => {
       {/* <TeamTwo/> */}
       {/* <CtaTwo/> */}
       {/* <BlogTwo/> */}
-      <FooterTwo/>
+      <FooterTwo />
     </>
-  );
-};
+  )
+}
 
-export default HomeTwoMain;
+export default dynamic(() => Promise.resolve(HomeTwoMain), { ssr: false })

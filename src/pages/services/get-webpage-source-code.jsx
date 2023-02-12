@@ -1,3 +1,4 @@
+import dynamic from "next/dynamic"
 import React from "react"
 import GetWebpageSourceCode from "../../components/AllServices/GetWebpageSourceCode/GetWebPageSourceCode"
 import servicesData from "../../data/servicesData"
@@ -11,4 +12,6 @@ const WebPageSourceCodePage = () => {
   )
 }
 
-export default WebPageSourceCodePage
+export default dynamic(() => Promise.resolve(WebPageSourceCodePage), {
+  ssr: false
+})

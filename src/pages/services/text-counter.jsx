@@ -1,3 +1,4 @@
+import dynamic from "next/dynamic"
 import React from "react"
 import TextCounter from "../../components/AllServices/DocCounter/TextCounter"
 import servicesData from "../../data/servicesData"
@@ -12,5 +13,6 @@ const TextCounterPage = () => {
     </>
   )
 }
-
-export default TextCounterPage
+export default dynamic(() => Promise.resolve(TextCounterPage), {
+  ssr: false
+})

@@ -1,8 +1,10 @@
 import React from "react"
-import DomainAvailabilityChecker from "../../components/AllServices/DomainInfo/DomainAvailablityChecker"
 import ServicePage from "./service"
 import servicesData from "../../data/servicesData"
-
+import dynamic from "next/dynamic"
+const DomainAvailabilityChecker = dynamic(() =>
+  import("../../components/AllServices/DomainInfo/DomainAvailablityChecker")
+)
 const DomainAvailability = () => {
   return (
     <ServicePage HTUData={servicesData[6]}>
@@ -10,5 +12,6 @@ const DomainAvailability = () => {
     </ServicePage>
   )
 }
-
-export default DomainAvailability
+export default dynamic(() => Promise.resolve(DomainAvailability), {
+  ssr: false
+})

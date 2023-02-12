@@ -10,5 +10,6 @@ const ScriptVideoDurationPage = () => {
     </ServicePage>
   )
 }
-
-export default ScriptVideoDurationPage
+export default dynamic(() => Promise.resolve(ScriptVideoDurationPage), {
+  ssr: false
+})
