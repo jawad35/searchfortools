@@ -176,7 +176,7 @@ const Header = ({ HeaderTwo, headerEight = false, homeNine }) => {
                   <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-6">
                     <div className="tp-header-action">
                       <ul>
-                        <li className="d-none d-sm-inline-block">
+                        {/* <li className="d-none d-sm-inline-block">
                           <button
                             onClick={() => setSearchOpen(true)}
                             href="#"
@@ -184,15 +184,15 @@ const Header = ({ HeaderTwo, headerEight = false, homeNine }) => {
                           >
                             <i className="fas fa-search"></i>
                           </button>
-                        </li>
-                        <li>
+                        </li> */}
+                        {/* <li>
                           <button
                             onClick={() => setShowSidebar(true)}
                             className="info-toggle-btn sidebar-toggle-btn"
                           >
                             <i className="fas fa-bars"></i>
                           </button>
-                        </li>
+                        </li> */}
                         <li>
                           {/* dark mode button start  */}
                           <div className="mode-switch-wrapper my_switcher setting-option">

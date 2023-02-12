@@ -53,7 +53,7 @@ const TryOtherTools = () => {
                     {Shuffle(ShuffledServices)
                       .slice(0, 5)
                       ?.map((service) => (
-                        <li>
+                        <li key={service?.url}>
                           <div className="feed-number">
                             <Link href={service?.url}>{service?.icon}</Link>
                           </div>
@@ -63,9 +63,11 @@ const TryOtherTools = () => {
                               {service?.title}
                             </span>
                             <h6>
-                              <Link href="/blog-details">
-                                Don’t Underestimate The Software Administration
-                                UX
+                              <Link href={service?.url}>
+                                {service?.url}
+                                {/* {service?.working?.length > 100
+                                  ? `${service?.working}...`
+                                  : service?.working} */}
                               </Link>
                             </h6>
                           </div>
