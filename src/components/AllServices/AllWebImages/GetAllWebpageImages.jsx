@@ -4,6 +4,7 @@ import { schemayoutube } from "../../common/schema"
 import { saveAs } from "file-saver"
 import { toast } from "react-toastify"
 import axios from "axios"
+import { BASE_API_URL } from "../../../utility/Urls"
 // import dynamic from 'next/dynamic';
 // import {TagInput} from 'reactjs-tag-input'
 // const {TagInput} = dynamic(import ("reactjs-tag-input"), { ssr: false })
@@ -21,7 +22,7 @@ const GetAllWebpageImages = ({ padd }) => {
   }
   const GetAllWebImages = (values) => {
     axios
-      .post(`http://localhost:8000/api/webpage-all-images/`, values)
+      .post(`${BASE_API_URL}/webpage-all-images/`, values)
       .then((res) => {
         if (res.data?.WabPageData?.Success) {
           setAllImages(res.data?.WabPageData?.AllImages)

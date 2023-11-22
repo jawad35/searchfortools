@@ -6,6 +6,7 @@ import { schematext } from "../../common/schema"
 import ResultTable from "./ResultTable"
 import CustomLoader from "../../common/Loader/CustomLoader"
 import { toast } from "react-toastify"
+import { BASE_API_URL } from "../../../utility/Urls"
 // import dynamic from 'next/dynamic';
 // import {TagInput} from 'reactjs-tag-input'
 // const {TagInput} = dynamic(import ("reactjs-tag-input"), { ssr: false })
@@ -19,7 +20,7 @@ const EmailExtractor = ({ padd }) => {
     setExtractedEmails([])
     setIsEmailEmpty(false)
     axios
-      .post(`http://localhost:8000/api/emails-extractor/`, values)
+      .post(`${BASE_API_URL}/emails-extractor/`, values)
       .then((res) => {
         if (res.data?.Success) {
           setTimeout(() => {

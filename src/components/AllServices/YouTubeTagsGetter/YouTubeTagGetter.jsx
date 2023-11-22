@@ -23,7 +23,7 @@ const YouTubeTagsExtractor = ({ padd }) => {
       setIsDataLoaded(true)
       setTags([])
       axios
-        .post(`http://localhost:8000/api/youtube-tags/`, values)
+        .post(`http://localhost:8000/stapis/youtube-tags/`, values)
         .then((res) => {
           setTimeout(() => {
             setTags(res.data?.data?.tags.toString().split(","))

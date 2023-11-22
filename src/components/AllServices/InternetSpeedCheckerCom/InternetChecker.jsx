@@ -6,6 +6,7 @@ import { toast } from "react-toastify"
 import { CheckInternetConnection } from "../../../utility/internetconnectivity"
 import CustomLoader from "../../common/Loader/CustomLoader"
 import InternetCard from "./InternetCard"
+import { BASE_API_URL } from "../../../utility/Urls"
 const InternetSpeedChecker = ({ padd }) => {
   const [internetData, setInternetData] = useState("")
   const [isDataLoaded, setisDataLoaded] = useState(false)
@@ -24,7 +25,7 @@ const InternetSpeedChecker = ({ padd }) => {
   const GetInternetSpeed = (values) => {
     setisDataLoaded(true)
     setInternetData("")
-    axios.get(`http://localhost:8000/api/test-internet-speed/`).then((res) => {
+    axios.get(`${BASE_API_URL}/test-internet-speed/`).then((res) => {
       console.log(res.data)
 
       if (res.data?.Success) {

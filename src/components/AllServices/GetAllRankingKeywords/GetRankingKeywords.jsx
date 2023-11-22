@@ -3,6 +3,7 @@ import axios from "axios"
 import { useFormik } from "formik"
 import ErrorMsg from "../../common/ErrorMsg"
 import { schematext } from "../../common/schema"
+import { BASE_API_URL } from "../../../utility/Urls"
 // import DomainResultCard from "./DomainResultCard"
 // import dynamic from 'next/dynamic';
 // import {TagInput} from 'reactjs-tag-input'
@@ -11,7 +12,7 @@ const GetTopKeywords = ({ padd }) => {
   const [domainavailable, setDomainAvailable] = useState(false)
   const GetYouTubeTags = (values) => {
     axios
-      .post(`http://localhost:8000/api/get-top-keywords/`, values)
+      .post(`${BASE_API_URL}/get-top-keywords/`, values)
       .then((res) => {
         // if (res.data?.WebPageData?.Access) {
         //   setDomainAvailable(false)

@@ -13,12 +13,12 @@ import EventImageMaker from "../../components/AllServices/EventImageMaker/EventI
 const InternetSpeedChecker = () => {
   const router = useRouter()
   const [serviceItem, setServiceItem] = useState({})
-  const GetYouTubeTags = () => {
-    axios.get(`http://localhost:8000/api/youtube-tags/`).then((res) => {
-      console.log(res)
-      console.log(res.data)
-    })
-  }
+  // const GetYouTubeTags = () => {
+  //   axios.get(`${BASE_API_URL}/youtube-tags/`).then((res) => {
+  //     console.log(res)
+  //     console.log(res.data)
+  //   })
+  // }
 
   return (
     <ServicePage>

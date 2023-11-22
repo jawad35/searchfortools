@@ -8,6 +8,7 @@ import ErrorMsg from "../../common/ErrorMsg"
 
 import { ServerErrorMsg } from "../../../utility/commonStringsMsg"
 import CustomLoader from "../../common/Loader/CustomLoader"
+import { BASE_API_URL } from "../../../utility/Urls"
 const DomainAvailabilityChecker = ({ padd }) => {
   const [domainavailable, setDomainAvailable] = useState("")
   const [isDataLoaded, setIsDataLoaded] = useState(false)
@@ -20,7 +21,7 @@ const DomainAvailabilityChecker = ({ padd }) => {
     const extractedUrl = url.replace(/[^a-z0-9]/gi, "").concat(values.extension)
     setDomainName(extractedUrl)
     axios
-      .post(`http://localhost:8000/api/get-domain-info/`, { url: extractedUrl })
+      .post(`${BASE_API_URL}/get-domain-info/`, { url: extractedUrl })
       .then((res) => {
         if (res.data?.WebPageData?.Success) {
           if (res.data?.WebPageData?.domain?.domain_name !== null) {

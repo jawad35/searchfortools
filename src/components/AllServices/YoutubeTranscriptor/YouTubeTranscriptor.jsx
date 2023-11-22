@@ -23,7 +23,7 @@ const YouTubeTranscriptor = () => {
     if (isUrlValid) {
       setIsLoadedData(true)
       axios
-        .post(`http://localhost:8000/api/youtube-transcript/`, {
+        .post(`http://localhost:8000/stapis/youtube-transcript/`, {
           id: isUrlValid
         })
         .then((res) => {
