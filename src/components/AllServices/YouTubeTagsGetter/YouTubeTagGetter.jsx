@@ -11,6 +11,7 @@ import {
   ServerErrorMsg,
   UrlPlaceHolderYouTube
 } from "../../../utility/commonStringsMsg"
+import { BASE_URL } from "../../../utility/Urls"
 // import dynamic from 'next/dynamic';
 // import {TagInput} from 'reactjs-tag-input'
 // const {TagInput} = dynamic(import ("reactjs-tag-input"), { ssr: false })
@@ -23,7 +24,7 @@ const YouTubeTagsExtractor = ({ padd }) => {
       setIsDataLoaded(true)
       setTags([])
       axios
-        .post(`http://localhost:8000/api/youtube-tags/`, values)
+        .post(`${BASE_URL}/youtube-tags/`, values)
         .then((res) => {
           setTimeout(() => {
             setTags(res.data?.data?.tags.toString().split(","))

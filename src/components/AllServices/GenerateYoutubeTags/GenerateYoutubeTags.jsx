@@ -4,6 +4,7 @@ import { useFormik } from "formik"
 import ErrorMsg from "../../common/ErrorMsg"
 import { schemayoutube } from "../../common/schema"
 import TagsCard from "./TagsCard"
+import { BASE_URL } from "../../../utility/Urls"
 // import dynamic from 'next/dynamic';
 // import {TagInput} from 'reactjs-tag-input'
 // const {TagInput} = dynamic(import ("reactjs-tag-input"), { ssr: false })
@@ -13,7 +14,7 @@ const YouTubeTagsExtractor = ({ padd }) => {
 
   const GetYouTubeTags = (values) => {
     axios
-      .post(`http://localhost:8000/api/youtube-tags/`, values)
+      .post(`${BASE_URL}/youtube-tags/`, values)
       .then((res) => {
         setTags(res.data?.data?.tags.toString().split(","))
       })

@@ -4,6 +4,7 @@ import { useFormik } from "formik"
 import ErrorMsg from "../../common/ErrorMsg"
 import { schemayoutube } from "../../common/schema"
 import ResultTable from "./ResultTable"
+import { BASE_URL } from "../../../utility/Urls"
 // import dynamic from 'next/dynamic';
 // import {TagInput} from 'reactjs-tag-input'
 // const {TagInput} = dynamic(import ("reactjs-tag-input"), { ssr: false })
@@ -15,7 +16,7 @@ const WebPageLoadTimeChecker = ({ padd }) => {
 
   const GetYouTubeTags = (values) => {
     axios
-      .post(`http://localhost:8000/api/webpage-load-checker/`, values)
+      .post(`${BASE_URL}/webpage-load-checker/`, values)
       .then((res) => {
         if (res.data?.WebPageData?.Access) {
           setLoadTime(res.data?.WebPageData?.LoadTime)

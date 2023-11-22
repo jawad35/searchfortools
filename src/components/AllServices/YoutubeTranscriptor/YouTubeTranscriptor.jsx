@@ -6,6 +6,7 @@ import ServiceWrapper from "../ServicesWrapper"
 import { toast } from "react-toastify"
 import { ServerErrorMsg } from "../../../utility/commonStringsMsg"
 import CustomLoader from "../../common/Loader/CustomLoader"
+import { BASE_URL } from "../../../utility/Urls"
 const YouTubeTranscriptor = () => {
   const [transcriptText, setTranscriptText] = useState([])
   const [isLoaded, setIsLoadedData] = useState(false)
@@ -23,7 +24,7 @@ const YouTubeTranscriptor = () => {
     if (isUrlValid) {
       setIsLoadedData(true)
       axios
-        .post(`http://localhost:8000/api/youtube-transcript/`, {
+        .post(`${BASE_URL}/youtube-transcript/`, {
           id: isUrlValid
         })
         .then((res) => {

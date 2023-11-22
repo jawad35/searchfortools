@@ -62,7 +62,7 @@ const FooterTwo = () => {
           <div className="container">
             <div className="row align-items-center">
               <div className="col-xl-6 col-lg-7">
-                <p>© 2022 Nerox - Agency & Portfolio Design . All Rights Reserved.</p>
+                <p>© 2022 Searchfortools - Agency & Portfolio Design . All Rights Reserved.</p>
               </div>
               <div className="col-xl-6 col-lg-5">
                 <div className="copyright-links">

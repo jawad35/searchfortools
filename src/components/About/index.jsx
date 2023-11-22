@@ -5,15 +5,16 @@ import Header from "../common/Header"
 import AboutArea from "./AboutArea"
 import AboutCounter from "./AboutCounter"
 import CtaImages from "./CtaImages"
+import dynamic from "next/dynamic"
 
 const index = () => {
   return (
     <>
       <Header />
-      <Breadcrumb title="ABOUT NEROX" subtitle=" About Us" />
+      <Breadcrumb title="ABOUT US" subtitle=" About Us" />
       <AboutArea />
       <AboutCounter />
-      <CtaImages />
+      {/* <CtaImages /> */}
       <FooterTwo />
     </>
   )

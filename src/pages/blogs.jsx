@@ -1,8 +1,9 @@
 import React from 'react';
 import SEO from '../components/seo';
 import BlogMain from '../components/Blog';
+import dynamic from 'next/dynamic';
 
-const blog = () => {
+const Blog = () => {
   return (
     <>
       <SEO pageTitle="Blog" />
@@ -11,4 +12,4 @@ const blog = () => {
   );
 };
 
-export default blog;
+export default dynamic(() => Promise.resolve(Blog), { ssr: false });

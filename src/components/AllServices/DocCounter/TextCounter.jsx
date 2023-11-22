@@ -6,6 +6,7 @@ import { schematext } from "../../common/schema"
 import ResultTable from "./ResultTable"
 import ServiceWrapper from "../ServicesWrapper"
 import servicesData from "../../../data/servicesData"
+import { BASE_URL } from "../../../utility/Urls"
 // import dynamic from 'next/dynamic';
 // import {TagInput} from 'reactjs-tag-input'
 // const {TagInput} = dynamic(import ("reactjs-tag-input"), { ssr: false })
@@ -14,7 +15,7 @@ const TextCounter = () => {
   const [isLoaded, setIsLoadedData] = useState(false)
   const GetTextCounter = (values) => {
     axios
-      .post(`http://localhost:8000/api/text-counter/`, values)
+      .post(`${BASE_URL}/text-counter/`, values)
       .then((res) => {
         if (res.data?.TextCountData?.Success) {
           setIsLoadedData(true)
