@@ -4,6 +4,7 @@ import useSticky from "../../hooks/use-sticky"
 import Link from "next/link"
 import useGlobalContext from "../../hooks/useGlobalContext"
 import Sidebar from "./Sidebar"
+import Image from "next/image"
 
 const Header = ({ HeaderTwo, headerEight = false, homeNine }) => {
   const { theme, setTheme } = useTheme()
@@ -35,32 +36,33 @@ const Header = ({ HeaderTwo, headerEight = false, homeNine }) => {
                 <div className="col-xxl-3 col-xl-2 col-lg-2 col-md-6 col-6">
                   <div className="logo-dark">
                     <Link href="/">
-                      <a>
                         {homeNine ? (
-                          <img
+                          <Image
                             src="/assets/img/logo/searchfortools.png"
                             alt="logo"
                             width={50}
+                            height={50}
                           />
                         ) : (
-                          <img
+                          <Image
                             src="/assets/img/logo/searchfortools.png"
                             alt="logo"
                             width={50}
+                            height={50}
+
                           />
                         )}
-                      </a>
                     </Link>
                   </div>
                   <div className="logo-white">
                     <Link href="/">
-                      <a>
-                        <img
+                        <Image
                           src="/assets/img/logo/searchfortools.png"
                           alt="logo"
                           width={50}
+                          height={50}
+
                         />
-                      </a>
                     </Link>
                   </div>
                 </div>
@@ -168,6 +170,9 @@ const Header = ({ HeaderTwo, headerEight = false, homeNine }) => {
                         <li>
                           <Link href="/contact">Contact</Link>
                         </li>
+                        <li>
+                          <Link href="/team">Team</Link>
+                        </li>
                       </ul>
                     </nav>
                   </div>
@@ -185,14 +190,14 @@ const Header = ({ HeaderTwo, headerEight = false, homeNine }) => {
                             <i className="fas fa-search"></i>
                           </button>
                         </li> */}
-                        {/* <li>
+                        <li>
                           <button
                             onClick={() => setShowSidebar(true)}
                             className="info-toggle-btn sidebar-toggle-btn"
                           >
                             <i className="fas fa-bars"></i>
                           </button>
-                        </li> */}
+                        </li>
                         <li>
                           {/* dark mode button start  */}
                           <div className="mode-switch-wrapper my_switcher setting-option">

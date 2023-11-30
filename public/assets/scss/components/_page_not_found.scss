@@ -23,7 +23,7 @@
     animation: colordancing 4s infinite;
 }
 .error-container > span:nth-of-type(3) {
-    color: #fcba03;
+    color: #333e70;
     animation: colordancing2 4s infinite;
 }
 .error-container > span:nth-of-type(2) {
@@ -58,32 +58,30 @@
 }
 @keyframes shadowsdancing {
     0% {
-        box-shadow: inset 30px 0 0 rgba(156, 156, 160, 0.4), inset 0 30px 0 rgba(239, 250, 180, 0.4),
-            inset -30px 0 0 rgba(0, 0, 0, 0.4), inset 0 -30px 0 rgba(245, 105, 145, 0.4);
+        box-shadow: inset 30px 0 0 rgba(156, 156, 160, 0.769), inset 0 30px 0 rgba(180, 193, 250, 0.4),
+            inset -30px 0 0 rgba(0, 0, 0, 0.4), inset 0 -30px 0 rgba(105, 156, 245, 0.4);
     }
     25% {
-        box-shadow: inset 30px 0 0 rgba(39, 35, 94, 0.534), inset 0 30px 0 rgba(209, 242, 165, 0.4),
-            inset -30px 0 0 rgb(255, 255, 255), inset 0 -30px 0 rgba(255, 196, 140, 0.4);
+        box-shadow: inset 30px 0 0 rgba(39, 35, 94, 0.534), inset 0 30px 0 rgba(198, 165, 242, 0.711),
+            inset -30px 0 0 rgba(8, 90, 231, 0.4), inset 0 -30px 0 rgba(103, 111, 164, 0.4);
+
     }
     50% {
-        box-shadow: inset 30px 0 0 rgba(237, 217, 3, 0.621), inset 0 30px 0 rgba(245, 105, 145, 0.4),
-            inset -30px 0 0 rgba(8, 90, 231, 0.4), inset 0 -30px 0 rgba(239, 250, 180, 0.4);
+        box-shadow: inset 30px 0 0 rgba(69, 3, 237, 0.621), inset 0 30px 0 rgba(105, 140, 245, 0.4),
+            inset -30px 0 0 rgba(8, 90, 231, 0.4), inset 0 -30px 0 rgba(103, 111, 164, 0.4);
     }
     75% {
-        box-shadow: inset 30px 0 0 rgba(10, 12, 54, 0.4), inset 0 30px 0 rgba(255, 196, 140, 0.4),
-            inset -30px 0 0 rgba(105, 159, 245, 0.4), inset 0 -30px 0 rgba(209, 242, 165, 0.4);
+        box-shadow: inset 30px 0 0 rgba(50, 56, 171, 0.4), inset 0 30px 0 rgba(140, 146, 255, 0.4),
+            inset -30px 0 0 rgba(105, 159, 245, 0.4), inset 0 -30px 0 rgba(165, 184, 242, 0.4);
     }
     100% {
-        box-shadow: inset 30px 0 0 rgba(77, 77, 77, 0.4), inset 0 30px 0 rgba(239, 250, 180, 0.4),
-            inset -30px 0 0 rgba(24, 28, 126, 0.744), inset 0 -30px 0 rgba(245, 105, 145, 0.4);
+        box-shadow: inset 30px 0 0 rgba(77, 77, 77, 0.4), inset 0 30px 0 rgba(206, 180, 250, 0.4),
+            inset -30px 0 0 rgba(24, 28, 126, 0.744), inset 0 -30px 0 rgba(119, 105, 245, 0.4);
     }
 }
 @keyframes colordancing {
     0% {
         color: #333e70;
-    }
-    25% {
-        color: #fcba03;
     }
     50% {
         color: #1e81b0;
@@ -104,9 +102,6 @@
     }
     50% {
         color: #333e70;
-    }
-    75% {
-        color: #fcba03;
     }
     100% {
         color: #1e81b0;

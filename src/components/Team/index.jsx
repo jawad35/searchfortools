@@ -11,7 +11,7 @@ const index = () => {
       <Header/>
       <Breadcrumb title="OUR TEAM" subtitle="Our Team" />
       <TeamArea/>
-      <BrandArea padd="team-brand"/>
+      {/* <BrandArea padd="team-brand"/> */}
       <FooterTwo/>
     </>
   );

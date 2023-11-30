@@ -4,7 +4,7 @@ const Breadcrumb = ({title,subtitle}) => {
   return (
     <>
       <section className="breadcrumb__area include-bg pt-140 pb-140 breadcrumb__overlay" 
-      style={{background:'#fcba03'}}>
+      style={{background:'rgb(85, 173, 238)'}}>
         <div className="container">
           <div className="row">
             <div className="col-xxl-12">
