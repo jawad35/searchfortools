@@ -1,5 +1,5 @@
 import dynamic from "next/dynamic"
-import HomeMain from "../components/HomeTwo"
+import HomeMain from "../components/Home/HomeMain"
 import SEO from "../components/seo"
 
 const index = () => {
