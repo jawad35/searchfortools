@@ -91,10 +91,10 @@ const Header = ({ HeaderTwo, headerEight = false, homeNine }) => {
                           </ul>
                         </li> */}
                         <li>
-                          <Link href="/">Home</Link>
+                          <Link href="/">home</Link>
                         </li>
                         <li>
-                          <Link href="/about">About</Link>
+                          <Link href="/shop">shop</Link>
                         </li>
                         {/* <li className="has-dropdown megamenu-full">
                           <a href="#">Pages</a>
@@ -168,10 +168,10 @@ const Header = ({ HeaderTwo, headerEight = false, homeNine }) => {
                           <Link href="/services">Services</Link>
                         </li> */}
                         <li>
-                          <Link href="/contact">Contact</Link>
+                          <Link href="/portfolio">portfolio</Link>
                         </li>
                         <li>
-                          <Link href="/team">Team</Link>
+                          <Link href="/team">team</Link>
                         </li>
                       </ul>
                     </nav>

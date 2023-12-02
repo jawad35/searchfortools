@@ -6,7 +6,7 @@ export default function middleware(req) {
     "http://localhost:8080/portfolio-details",
     "http://localhost:8080/product-details",
     "http://localhost:8080/coming-soon",
-    "http://localhost:8080/shop",
+    // "http://localhost:8080/shop",
     "http://localhost:8080/sign-in",
     "http://localhost:8080/sign-up",
     "http://localhost:8080/blog",
