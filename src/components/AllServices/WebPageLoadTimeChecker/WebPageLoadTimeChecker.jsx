@@ -5,6 +5,7 @@ import ErrorMsg from "../../common/ErrorMsg"
 import { schemayoutube } from "../../common/schema"
 import ResultTable from "./ResultTable"
 import { BASE_URL } from "../../../utility/Urls"
+import CustomLoader from "../../common/Loader/CustomLoader"
 // import dynamic from 'next/dynamic';
 // import {TagInput} from 'reactjs-tag-input'
 // const {TagInput} = dynamic(import ("reactjs-tag-input"), { ssr: false })
@@ -13,17 +14,21 @@ const WebPageLoadTimeChecker = ({ padd }) => {
   const [searchedurl, setSearchedURl] = useState("")
   const [ScriptFilesList, setScriptFilesList] = useState([])
   const [CssFilesList, setCssFilesList] = useState([])
+  const [isLoaded, setIsLoadedData] = useState(null)
 
   const GetYouTubeTags = (values) => {
+    setIsLoadedData(true)
     axios
       .post(`${BASE_URL}/webpage-load-checker/`, values)
       .then((res) => {
         if (res.data?.WebPageData?.Access) {
+          setIsLoadedData(false)
           setLoadTime(res.data?.WebPageData?.LoadTime)
           setScriptFilesList(res.data?.WebPageData?.ScriptFilesUrls)
           setCssFilesList(res.data?.WebPageData?.CssFilesUrls)
           setSearchedURl(res.data?.WebPageData?.SearchUrl)
         } else {
+          setIsLoadedData(false)
           alert(res.data?.WebPageData?.ErrorMsg)
         }
       })
@@ -72,7 +77,8 @@ const WebPageLoadTimeChecker = ({ padd }) => {
                           />
                           {/* {touched.name && <ErrorMsg error={errors.name} />} */}
                         </div>
-                        <div className="col-xxl-12">
+                        {
+                          isLoaded ? <CustomLoader/> : <div className="col-xxl-12">
                           <div className="contact__btn">
                             <button type="submit" className="tp-solid-btn">
                               Calculate
@@ -94,6 +100,7 @@ const WebPageLoadTimeChecker = ({ padd }) => {
                             )}
                           </div>
                         </div>
+                        }
                       </div>
                     </div>
                   </form>

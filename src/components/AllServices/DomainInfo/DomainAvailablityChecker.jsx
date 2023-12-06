@@ -23,7 +23,7 @@ const DomainAvailabilityChecker = ({ padd }) => {
     axios
       .post(`${BASE_URL}/get-domain-info/`, { url: extractedUrl })
       .then((res) => {
-        if (res.data?.WebPageData?.Success) {
+        if (res.data?.WebPageData?.Access) {
           if (res.data?.WebPageData?.domain?.domain_name !== null) {
             setIsDataLoaded(false)
             setDomainAvailable(false)
@@ -33,7 +33,7 @@ const DomainAvailabilityChecker = ({ padd }) => {
           }
         } else {
           setIsDataLoaded(false)
-          setDomainAvailable(true)
+          setDomainAvailable(false)
         }
       })
       .catch((e) => {

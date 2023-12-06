@@ -16,7 +16,7 @@ const ServicesTwo = () => {
             <div className="col-xl-12">
               <div className="tp-section-title text-center">
                 <span className="tp-sub-title-2 mb-15">What we Offer</span>
-                <h2 className="tp-title">My Service Area</h2>
+                <h2 className="tp-title">Our Tools Area</h2>
               </div>
             </div>
           </div>

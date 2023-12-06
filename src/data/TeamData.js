@@ -1,47 +1,41 @@
 const teamData = [
     {
         id:1,
-        img:'assets/img/author/author1.jpg',
+        img:'assets/img/author/jawad.png',
         teamImg2:'assets/img/author/author8.jpg',
         name:'Rasalina Willamson',
-        title:'Sr. Web Developer'
+        title:'Sr. Full Stack Developer'
     },
     {
         id:2,
-        img:'assets/img/author/author2.jpg',
+        img:'assets/img/author/umair.png',
         teamImg2:'assets/img/author/author9.jpg',
-        name:'Josep Willamson',
-        title:'Sr. Web Designer'
+        name:'Umair Arshad',
+        title:'Sr. Digital Marketer'
     },
     {
         id:3,
-        img:'assets/img/author/author3.jpg',
+        img:'assets/img/author/ahsan.png',
         teamImg2:'assets/img/author/author10.jpg',
-        name:'Salim Rana',
-        title:'UX/UI Designer'
+        name:'Muhammad Ahsan',
+        title:'Sr. Python Developer'
 
     },
     {
         id:4,
-        img:'assets/img/author/author4.jpg',
+        img:'assets/img/author/qayoom.png',
         teamImg2:'assets/img/author/author11.jpg',
-        name:'Naim Ahmed',
-        title:'React Developer'
+        name:'Qayoom Ali',
+        title:'Sr. Motion Graphics'
     },
     {
         id:5,
-        img:'assets/img/author/author5.jpg',
-        teamImg2:'assets/img/author/author12.jpg',
-        name:'Sehnewaj Sakil',
-        title:'Web Developer'
-    },
-    {
-        id:6,
-        img:'assets/img/author/author6.jpg',
-        teamImg2:'assets/img/author/author13.jpg',
-        name:'Rasalina Willamson ',
-        title:'Full Stack Developer'
-    },
+        img:'assets/img/author/asad.png',
+        teamImg2:'assets/img/author/author11.jpg',
+        name:'Asad Butt',
+        title:'Sr. Shopify Developer'
+    }
+
 ]
 
 export default teamData;

@@ -3,7 +3,7 @@ import axios from "axios"
 import { useFormik } from "formik"
 import ErrorMsg from "../../common/ErrorMsg"
 import { schemayoutube } from "../../common/schema"
-import { PythonAPiIUrl } from "../../../utility/Urls"
+import { BASE_URL, PythonAPiIUrl } from "../../../utility/Urls"
 import Formatter from "html-formatter"
 import { Copy } from "react-feather"
 import { toast } from "react-toastify"
@@ -21,15 +21,13 @@ const GetWebpageSourceCode = ({ padd }) => {
     setIsLoadedData(true)
     setSourceCode("")
     axios
-      .post(`${PythonAPiIUrl}/webpage-source-code/`, values)
+      .post(`${BASE_URL}/webpage-source-code/`, values)
       .then((res) => {
         if (res.data?.Success) {
-          if ((res.data?.Data?.SourceCode, length === 0)) {
-            setTimeout(() => {
+          if ((res.data?.Data?.SourceCode?.length === 0)) {
               setSourceCode("")
               setIsLoadedData(false)
               toast.error(ServerErrorMsg)
-            }, 1000)
           }
           setSourceCode(Formatter.render(res.data?.Data?.SourceCode))
           setIsLoadedData(false)

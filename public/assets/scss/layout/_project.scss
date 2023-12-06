@@ -638,6 +638,7 @@
     &:hover{
         & .tppg-project__thumb-image img {
             transform: scale3d(1.1, 1.1, 1.1);
+            cursor: pointer;
         }
         & .tppg-project__thumb::before{
             @include transform(translateX(0));

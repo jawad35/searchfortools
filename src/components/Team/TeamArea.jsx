@@ -21,13 +21,13 @@ const TeamArea = () => {
                     <div className="tp-team__content">
                       <h4 className="tp-team__title mb-15"><Link href="/about-me">{team.name}</Link></h4>
                       <span className="tp-team__designation">{team.title}</span>
-                      <div className="tp-team__social">
+                      {/* <div className="tp-team__social">
                         <a href="#"><i className="fa-brands fa-facebook-f"></i></a>
                         <a href="#"><i className="fa-brands fa-twitter"></i></a>
                         <a href="#"><i className="fa-brands fa-instagram"></i></a>
                         <a href="#"><i className="fa-brands fa-behance"></i></a>
                         <a href="#"><i className="fa-brands fa-dribbble"></i></a>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>

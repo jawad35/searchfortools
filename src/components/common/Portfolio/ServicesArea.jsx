@@ -2,15 +2,16 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { motion } from "framer-motion";
 import portfolioData from '../../../data/portfolioData';
+import Image from 'next/image';
 
 
-const portfolioItems = portfolioData.slice(0, 9);
+const portfolioItems = portfolioData.slice(0, 16);
 const uniquePortfolioItems = portfolioItems.filter(
   (arr, index, self) =>
     index === self.findIndex((t) => t.img === arr.img && t.State === arr.State)
 );
 
-const PortfolioFour = ({ padd }) => {
+const ServicesArea = ({ padd }) => {
   const [portfolios, setPortfolios] = useState(uniquePortfolioItems);
   const [active, setIsActive] = useState('all');
   // handleFilterItems
@@ -34,23 +35,23 @@ const PortfolioFour = ({ padd }) => {
                 <button className={`tp-cr-btn ${active === 'all' && 'active'}`}
                   onClick={() => handleFilterItems('all')}>All</button>
 
-                <button className={`tp-cr-btn ${active === 'WEDDING' && 'active'}`}
-                  onClick={() => handleFilterItems('WEDDING')}>WEDDING</button>
+                <button className={`tp-cr-btn ${active === 'WEB DEVELOPMENT' && 'active'}`}
+                  onClick={() => handleFilterItems('WEB DEVELOPMENT')}>WEB DEVELOPMENT</button>
 
-                <button className={`tp-cr-btn ${active === 'BIRTHDAY PARTY' && 'active'}`}
-                  onClick={() => handleFilterItems('BIRTHDAY PARTY')}>BIRTHDAY PARTY</button>
+                <button className={`tp-cr-btn ${active === 'MOBILE DEVELOPMENT' && 'active'}`}
+                  onClick={() => handleFilterItems('MOBILE DEVELOPMENT')}>MOBILE DEVELOPMENT</button>
 
-                <button className={`tp-cr-btn ${active === 'EVENTS' && 'active'}`}
-                  onClick={() => handleFilterItems('EVENTS')}>EVENTS</button>
+                <button className={`tp-cr-btn ${active === 'UX UI Designs' && 'active'}`}
+                  onClick={() => handleFilterItems('UX UI Designs')}>UX UI Designs</button>
 
-                <button className={`tp-cr-btn ${active === 'PRINT DESIGN' && 'active'}`}
-                  onClick={() => handleFilterItems('PRINT DESIGN')}>PRINT DESIGN</button>
+                <button className={`tp-cr-btn ${active === 'GRAPHICS' && 'active'}`}
+                  onClick={() => handleFilterItems('GRAPHICS')}>GRAPHICS</button>
 
-                <button className={`tp-cr-btn ${active === '3D DESIGN' && 'active'}`}
-                  onClick={() => handleFilterItems('3D DESIGN')}>3D DESIGN</button>
-
+                <button className={`tp-cr-btn ${active === 'VIDEO EDITING' && 'active'}`}
+                  onClick={() => handleFilterItems('VIDEO EDITING')}>VIDEO EDITING</button>
+{/* 
                 <button className={`tp-cr-btn ${active === 'PRODUCT DESIGN' && 'active'}`}
-                  onClick={() => handleFilterItems('PRODUCT DESIGN')}>PRODUCT DESIGN</button>
+                  onClick={() => handleFilterItems('PRODUCT DESIGN')}>PRODUCT DESIGN</button> */}
               </div>
             </div>
           </div>
@@ -66,19 +67,17 @@ const PortfolioFour = ({ padd }) => {
                     <div className="tppg-project mb-35">
                       <div className="tppg-project__thumb">
                         <div className="tppg-project__thumb-image">
-                          <Link href={`/portfolio-details/${item.id}`}>
-                            <a>
-                              <img src={item.img} alt="project-img" />
-                            </a>
+                          <Link href={`/portfolio-details/${item.id}`} passHref>
+                              <img src={`/${item.img}`} alt="project-img" />
                           </Link>
                         </div>
                       </div>
                       <div className="tppg-project__content">
-                        <span className="tppg-project-tag mb-10">WEDDING TOUCH</span>
-                        <h4 className="tppg-project-title">
-                          <Link href={`/portfolio-details/${item.id}`}>
+                        <span className="tppg-project-tag mb-10">{item.category}</span>
+                        <h4 onClick={() => {
+                          window.open(item.title, '_blank')
+                        }} className="tppg-project-title">
                             <a>{item.title}</a>
-                          </Link>
                         </h4>
                       </div>
                     </div>
@@ -103,4 +102,4 @@ const PortfolioFour = ({ padd }) => {
   );
 };
 
-export default PortfolioFour;
+export default ServicesArea;

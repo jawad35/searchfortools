@@ -2,113 +2,113 @@
 const portfolioData = [
     {
         id: 1,
-        img: 'assets/img/project/2/project-1.jpg',
+        img: 'assets/img/project/p1/jellyridehomepage.png',
         img3:'assets/img/project/3/project-1.jpg',
         img4:'assets/img/project/4/project-1.jpg',
-        category:'WEB DESIGN',
-        title: 'The Home of the Future could bebes',
+        category:'WEB DEVELOPMENT',
+        title:'https://jellyride.com'
       },
       {
         id: 2,
-        img: 'assets/img/project/2/project-2.jpg',
+        img: 'assets/img/project/p2/ddlvidhomepage.png',
         img3:'assets/img/project/3/project-2.jpg',
         img4:'assets/img/project/4/project-2.jpg',
         category:'WEB DEVELOPMENT',
-        title: 'A big ticket gone to be an interesting'
+        title:'https://ddlvid.com'
       },
       {
         id: 3,
-        img: 'assets/img/project/2/project-3.jpg',
+        img: 'assets/img/project/p3/henryforge.png',
         img3:'assets/img/project/3/project-3.jpg',
         img4:'assets/img/project/4/project-3.jpg',
-        category:'UI UX DESIGN',
-        title: 'What is the Difference between'
+        category:'WEB DEVELOPMENT',
+        title: 'https://thehenrysforge.com'
       },
       {
         id: 4,
-        img: 'assets/img/project/2/project-4.jpg',
+        img: 'assets/img/project/p4/shoessite.png',
         img3:'assets/img/project/3/project-4.jpg',
         img4:'assets/img/project/4/project-4.jpg',
-        category:'GRAPHIC DESIGN',
-        title: 'A big ticket gone to be an interesting'
+        category:'WEB DEVELOPMENT',
+        title: 'https://helmboots.com'
       },
       {
         id: 5,
-        img: 'assets/img/project/2/project-5.jpg',
+        img: 'assets/img/project/p5/enests.png',
         img3:'assets/img/project/3/project-5.jpg',
         img4:'assets/img/project/4/project-5.jpg',
-        category:'APP DESIGN',
-        title: 'Why uou love nerox that much'
+        category:'WEB DEVELOPMENT',
+        title: 'https://enests.com'
       },
       {
         id: 6,
-        img: 'assets/img/project/2/project-6.jpg',
+        img: 'assets/img/project/p6/vipdeals.png',
         img3:'assets/img/project/3/project-6.jpg',
         img4:'assets/img/project/4/project-6.jpg',
-        category:'WEB DESIGN',
-        title: 'The world is more beautiful you think'
+        category:'WEB DEVELOPMENT',
+        title: 'https://vipdeals.ae/'
       },
       {
         id: 7,
-        img: 'assets/img/project/2/project-7.jpg',
+        img: 'assets/img/project/p7/globalreader.png',
         category:'WEB DEVELOPMENT',
-        title: 'The black bear coming soon'
+        title: 'https://www.globalreader.eu/'
       },
       {
         id: 8,
-        img: 'assets/img/project/2/project-8.jpg',
-        category:'UI UX DESIGN',
-        title: 'A brown fox jump over the lazy'
+        img: 'assets/img/project/p8/podcast.png',
+        category:'WORDPRESS',
+        title: 'https://podcasttonight.com/'
       },
       {
         id: 9,
-        img: 'assets/img/project/2/project-9.jpg',
-        category:'APP DESIGN',
-        title: 'Smart Phone is not available the',
+        img: 'assets/img/project/mobile_app/p1/mobiledesign1.png',
+        category:'UX UI Designs',
+        title: 'Powered by Near',
       },
 
    // portfolio five 
       {
         id: 10,
-        img: 'assets/img/project/project-1.jpg',
-        category:'WEB DESIGN',
-        title: 'Minimal Product Showcse Design',
+        img: 'assets/img/project/mobile_app/p2/cashback.png',
+        category:'UX UI Designs',
+        title: 'Powered by Cashback',
       },
       {
         id: 11,
-        img: 'assets/img/project/project-3.jpg',
-        category:'WEBSITE DESIGN',
-        title: 'Minimal Product Showcse Design',
+        img: 'assets/img/project/shopify/p1/mous-shopify.png',
+        category:'SHOPIFY',
+        title: 'https://www.mous.co',
       },
       {
         id: 12,
-        img: 'assets/img/project/project-2.jpg',
-        category:'WEB DESIGN',
-        title: 'Soundbox Branding Design',
+        img: 'assets/img/project/shopify/p2/hiutdenim.png',
+        category:'SHOPIFY',
+        title: 'https://hiutdenim.co.uk/',
       },
       {
         id: 13,
-        img: 'assets/img/project/project-4.jpg',
-        category:'WEBSITE DESIGN',
-        title: 'Ecommerce Product Landing',
+        img: 'assets/img/project/p9/oribar.png',
+        category:'WEB DEVELOPMENT',
+        title: 'https://www.oribar.com',
       },
       {
         id: 14,
-        img: 'assets/img/project/project-2.jpg',
-        category:'APP DESIGN',
-        title: 'Soundbox Branding Design',
+        img: 'assets/img/project/uiux/Oribar-figma.fig.png',
+        category:'UX UI Designs',
+        title: 'Powered by Oribar',
       },
       {
         id: 15,
-        img: 'assets/img/project/project-4.jpg',
-        category:'APP DESIGN',
-        title: 'Ecommerce Product Landing',
+        img: 'assets/img/project/uiux/jellyride-figma.png',
+        category:'UX UI Designs',
+        title: 'Powered by JellyRide',
       },
       {
         id: 16,
-        img: 'assets/img/project/project-2.jpg',
-        category:'LANDING PAGE',
-        title: 'Soundbox Branding Design',
+        img: 'assets/img/project/uiux/hotel-finder.png',
+        category:'UX UI Designs',
+        title: 'Powered by HotelFinder',
       },
       {
         id: 17,
