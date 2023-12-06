@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react"
 import QRScanner from "qr-scanner"
 import { toast } from "react-toastify"
 import CopyToClipboard from "react-copy-to-clipboard"
-import CustomAlertMessage from "../../common/customAlertMessage/CustomAlertMessage"
+// import CustomAlertMessage from "../../common/customAlertMessage/CustomAlertMessage"
 const QRCodeScanner = ({ padd }) => {
   const [scanResultFile, setScanResultFile] = useState("")
   const [image, setImage] = useState([])
@@ -62,11 +62,11 @@ const QRCodeScanner = ({ padd }) => {
                               />
                             </div>
                           </div>
-                          {scanResultFile && (
+                          {/* {scanResultFile && (
                             <CustomAlertMessage
                               title={"Click to Copy the text"}
                             />
-                          )}
+                          )} */}
                           <div className="mt-4">
                             <CopyToClipboard
                               text={scanResultFile}
