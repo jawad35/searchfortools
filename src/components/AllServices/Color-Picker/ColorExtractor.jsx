@@ -2,7 +2,6 @@ import { useState, useEffect } from "react"
 import { ColorExtractor } from "react-color-extractor"
 import CopyToClipboard from "react-copy-to-clipboard"
 import { toast } from "react-toastify"
-import CustomAlertMessage from "../../common/customAlertMessage/CustomAlertMessage"
 
 // Home
 const ColorImageExtractor = () => {
