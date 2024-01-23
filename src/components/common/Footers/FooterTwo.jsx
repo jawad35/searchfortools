@@ -11,7 +11,7 @@ const FooterTwo = () => {
                 <div className="footer__widget">
                   <h5 className="footer-sm-title mb-20">FEEL FREE TO CONTACT US</h5>
                   <h5 className="footer-sp-title mb-15"><i className="fa-solid fa-comment"></i> <a href="tel:+61383766284">+923410498631</a></h5>
-                  <span className="footer-sp-contact"><a href="mailto:nerox@gmail.com">searchfortoolsofficial@gmail.com</a></span>
+                  <span className="footer-sp-contact"><a href="mailto:nerox@gmail.com">info@brainsees.com</a></span>
                   <div className="footer-xs-wrapper mt-60 mb-30">
                     <h5 className="footer-xs-title">Career</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed <br /> do eiusmod tempor incididunt.</p>
@@ -62,7 +62,7 @@ const FooterTwo = () => {
           <div className="container">
             <div className="row align-items-center">
               <div className="col-xl-6 col-lg-7">
-                <p>© 2022 Searchfortools - Agency & Portfolio Design . All Rights Reserved.</p>
+                <p>© 2022 brainsees - Agency & Portfolio Design . All Rights Reserved.</p>
               </div>
               <div className="col-xl-6 col-lg-5">
                 <div className="copyright-links">

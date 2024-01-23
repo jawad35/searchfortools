@@ -41,7 +41,7 @@ const HeroSlider = () => {
                             <h2 className="tpagency-title">Introduce Our Creative <br /> Digital Tools</h2>
                             <div className="tpagency-button mt-60">
                               <Link href="/services">
-                                <a className="tp-white-btn">See Nerox Project</a>
+                                <a className="tp-white-btn">See Brainsees Project</a>
                               </Link>
                             </div>
                           </div>

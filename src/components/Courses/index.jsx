@@ -2,14 +2,17 @@ import React from 'react';
 import Breadcrumb from '../common/Breadcrumb';
 import FooterTwo from '../common/Footers/FooterTwo';
 import Header from '../common/Header';
-import ServicesArea from '../common/Portfolio/ServicesArea';
+import AboutMeArea from './AboutMeArea';
+import AboutMeTabs from './AboutMeTabs';
+import GetInTouch from './GetInTouch';
 
 const index = () => {
   return (
     <>
       <Header/>
-      <Breadcrumb title="OUR SERVICES" subtitle="Services" />
-      <ServicesArea padd="pt-115 pb-130"/>
+      <Breadcrumb title="OUR COURSES" subtitle="Courses" />
+      <AboutMeTabs/>
+      {/* <GetInTouch/> */}
       <FooterTwo/>
     </>
   );

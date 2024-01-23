@@ -38,17 +38,17 @@ const Header = ({ HeaderTwo, headerEight = false, homeNine }) => {
                     <Link href="/">
                         {homeNine ? (
                           <Image
-                            src="/assets/img/logo/searchfortools.png"
+                            src="/assets/img/logo/brainsees.png"
                             alt="logo"
-                            width={50}
-                            height={50}
+                            width={100}
+                            height={100}
                           />
                         ) : (
                           <Image
-                            src="/assets/img/logo/searchfortools.png"
+                            src="/assets/img/logo/brainsees.png"
                             alt="logo"
-                            width={50}
-                            height={50}
+                            width={100}
+                            height={100}
 
                           />
                         )}
@@ -57,10 +57,10 @@ const Header = ({ HeaderTwo, headerEight = false, homeNine }) => {
                   <div className="logo-white">
                     <Link href="/">
                         <Image
-                          src="/assets/img/logo/searchfortools.png"
+                          src="/assets/img/logo/brainsees.png"
                           alt="logo"
-                          width={50}
-                          height={50}
+                          width={100}
+                          height={100}
 
                         />
                     </Link>
@@ -91,7 +91,7 @@ const Header = ({ HeaderTwo, headerEight = false, homeNine }) => {
                           </ul>
                         </li> */}
                         <li>
-                          <Link href="/">tools</Link>
+                          <Link href="/courses">Courses</Link>
                         </li>
                         {/* <li>
                           <Link href="/shop">shop</Link>
@@ -172,6 +172,9 @@ const Header = ({ HeaderTwo, headerEight = false, homeNine }) => {
                         </li>
                         <li>
                           <Link href="/team">team</Link>
+                        </li>
+                        <li>
+                          <Link href="/contact">Contact Us</Link>
                         </li>
                       </ul>
                     </nav>

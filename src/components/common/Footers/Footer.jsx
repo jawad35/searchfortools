@@ -47,7 +47,7 @@ const Footer = () => {
                               <i className="fas fa-envelope"></i>
                            </div>
                            <div className="footer__list-text">
-                              <p><a href="mailto:searchfortoolsofficial@gmail.com">searchfortoolsofficial@gmail.com</a></p>
+                              <p><a href="mailto:info@brainsees.com">info@brainsees.com</a></p>
                            </div>
                         </div>
                         <div className="footer__list-item mb-40">

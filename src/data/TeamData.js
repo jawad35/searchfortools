@@ -3,7 +3,7 @@ const teamData = [
         id:1,
         img:'assets/img/author/jawad.png',
         teamImg2:'assets/img/author/author8.jpg',
-        name:'Rasalina Willamson',
+        name:'Jawad Ali',
         title:'Sr. Full Stack Developer'
     },
     {

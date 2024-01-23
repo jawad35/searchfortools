@@ -68,9 +68,9 @@ const Sidebar = ({ headerMenu }) => {
           </div>
           <div className="sidebar__content">
             <div className="sidebar__logo mb-40">
-              <a href="index.html">
+              <a href="/">
                 <Image
-                  src="/assets/img/logo/searchfortools.png"
+                  src="/assets/img/logo/brainsees.png"
                   alt="logo"
                   width={50}
                   height={50}
@@ -173,22 +173,22 @@ const Sidebar = ({ headerMenu }) => {
             <div className="sidebar__social">
               <ul>
                 <li>
-                  <a href="#">
+                  <a href="https://web.facebook.com/brainsees" target="__blank">
                     <i className="fab fa-facebook-f"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://twitter.com/Brainsees" target="__blank">
                     <i className="fab fa-twitter"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://www.youtube.com/channel/UCwV6luAPJBCXEmI-76jPAAQ" target="__blank">
                     <i className="fab fa-youtube"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://www.linkedin.com/in/brain-sees-828a5b2aa/" target="__blank">
                     <i className="fab fa-linkedin"></i>
                   </a>
                 </li>

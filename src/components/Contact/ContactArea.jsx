@@ -6,14 +6,13 @@ import schema from "../common/schema"
 const ContactArea = () => {
   const handleOnSubmit = (values, { resetForm }) => {
     alert(
-      `${
-        values.name +
-        "\n" +
-        values.email +
-        "\n" +
-        values.subject +
-        "\n" +
-        values.msg
+      `${values.name +
+      "\n" +
+      values.email +
+      "\n" +
+      values.subject +
+      "\n" +
+      values.msg
       }`
     )
     resetForm()
@@ -138,14 +137,14 @@ const ContactArea = () => {
                       </svg>
                     </div>
                     <div className="contact__info-text">
-                      <h4>New York Office</h4>
+                      <h4>Wazirabad</h4>
                       <p>
                         <a
                           target="_blank"
                           rel="noreferrer"
                           href="https://www.google.com/maps/place/Dhaka/@23.7806207,90.3492859,12z/data=!3m1!4b1!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8104753!4d90.4119873"
                         >
-                          Maypole Crescent 70-80 Upper St Norwich NR2 1LT
+                          Near Taj Mahal Marquee Sialkot Road Karmabad
                         </a>
                       </p>
                     </div>
@@ -164,12 +163,12 @@ const ContactArea = () => {
                       <h4>Email us directly</h4>
                       <p>
                         <a href="mailto:support@nerox.com">
-                          searchfortoolsofficial@gmail.com
+                          info@brainsees.com
                         </a>
                       </p>
                       {/* <p>
                         <a href="mailto:info@nerox.com">
-                          searchfortoolsofficial@gmail.com
+                          info@brainsees.com
                         </a>
                       </p> */}
                     </div>
@@ -186,10 +185,10 @@ const ContactArea = () => {
                     <div className="contact__info-text">
                       <h4>Phone</h4>
                       <p>
-                        <a href="tel:+(426)-742-26-44">+(341) 049 86 31</a>
+                        <a href="tel:+(426)-742-26-44">0341-0498631</a>
                       </p>
                       <p>
-                        <a href="tel:+(224)-762-442-32">+(344) 575 31 29</a>
+                        <a href="tel:+(224)-762-442-32">0343-6085438</a>
                       </p>
                     </div>
                   </div>
@@ -197,17 +196,22 @@ const ContactArea = () => {
                     <h4>Follow Us</h4>
                     <ul>
                       <li>
-                        <a href="#" className="fb">
+                        <a href="https://web.facebook.com/brainsees" className="fb" target="__blank">
                           <i className="fa-brands fa-facebook-f"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#" className="tw">
+                        <a href="https://twitter.com/Brainsees" className="tw" target="__blank">
                           <i className="fa-brands fa-twitter"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#" className="pin">
+                        <a href="https://www.youtube.com/channel/UCwV6luAPJBCXEmI-76jPAAQ" target="__blank">
+                          <i className="fab fa-youtube"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.linkedin.com/in/brain-sees-828a5b2aa/" className="pin" target="__blank">
                           <i className="fa-brands fa-linkedin-in"></i>
                         </a>
                       </li>

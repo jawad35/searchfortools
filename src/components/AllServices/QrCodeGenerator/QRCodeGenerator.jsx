@@ -14,7 +14,7 @@ const QRCodeGenerator = ({ padd }) => {
   const { handleChange, handleSubmit, handleBlur, errors, values, touched } =
     useFormik({
       initialValues: {
-        url: "www.searchfortools.com"
+        url: "www.brainsees.com"
       },
       validationSchema: schemayoutube,
       onSubmit: GetYouTubeTags

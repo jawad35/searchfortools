@@ -49,7 +49,7 @@ const ServicesArea = ({ padd }) => {
 
                 <button className={`tp-cr-btn ${active === 'VIDEO EDITING' && 'active'}`}
                   onClick={() => handleFilterItems('VIDEO EDITING')}>VIDEO EDITING</button>
-{/* 
+                {/* 
                 <button className={`tp-cr-btn ${active === 'PRODUCT DESIGN' && 'active'}`}
                   onClick={() => handleFilterItems('PRODUCT DESIGN')}>PRODUCT DESIGN</button> */}
               </div>
@@ -57,7 +57,7 @@ const ServicesArea = ({ padd }) => {
           </div>
           <div className="row grid-masonry">
             {
-              portfolios.map(item => {
+              portfolios.length === 0 ? <h5 className='text-center'>Not Uploaded Yet</h5> :  portfolios.map(item => {
                 return (
                   <motion.div layout animate={{ scale: 1 }}
                     initial={{ scale: 0.9 }}
@@ -68,7 +68,7 @@ const ServicesArea = ({ padd }) => {
                       <div className="tppg-project__thumb">
                         <div className="tppg-project__thumb-image">
                           <Link href={`/portfolio-details/${item.id}`} passHref>
-                              <img src={`/${item.img}`} alt="project-img" />
+                            <img src={`/${item.img}`} alt="project-img" />
                           </Link>
                         </div>
                       </div>
@@ -77,7 +77,7 @@ const ServicesArea = ({ padd }) => {
                         <h4 onClick={() => {
                           window.open(item.title, '_blank')
                         }} className="tppg-project-title">
-                            <a>{item.title}</a>
+                          <a>{item.title}</a>
                         </h4>
                       </div>
                     </div>
@@ -85,9 +85,8 @@ const ServicesArea = ({ padd }) => {
                 )
               })
             }
-
           </div>
-          <div className="row">
+          {/* <div className="row">
             <div className="col-xl-12">
               <div className="tp-creative-button text-center mt-35">
                 <Link href="/portfolio">
@@ -95,7 +94,7 @@ const ServicesArea = ({ padd }) => {
                 </Link>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

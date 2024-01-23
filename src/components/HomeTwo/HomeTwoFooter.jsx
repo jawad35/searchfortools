@@ -1,6 +1,36 @@
-import React from "react"
+import React, { useState } from "react"
 
 const FooterTwo = () => {
+  const [fullname, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+
+
+  const SubmitForm = async (e) => {
+
+    e.preventDefault()
+    if(!message) {
+      return alert("Message is required")
+    }
+    if(message.length < 20) {
+      return alert("Message should be contain at least 20 characters")
+    }
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ data: {fullname, email, message} }),
+    });
+    if(response.status == 203) {
+      return alert('All feilds are required');
+    }
+    if (response.status == 200) {
+      return alert('Thanks! Message sent successfully!');
+    } else {
+      alert('Something went wrong!');
+    }
+  }
   return (
     <>
       <footer>
@@ -39,8 +69,8 @@ const FooterTwo = () => {
                         </div>
                         <div className="footer__list-text">
                           <p>
-                            <a href="mailto:searchfortoolsofficial@gmail.com">
-                              searchfortoolsofficial@gmail.com
+                            <a href="mailto:info@brainsees.com">
+                              info@brainsees.com
                             </a>
                           </p>
                         </div>
@@ -65,12 +95,15 @@ const FooterTwo = () => {
                         Let’s Say Hi
                       </h2>
                     </div>
-                    <form id="contact-form" action="mail.php" method="POST">
+                    <form id="contact-form" onSubmit={SubmitForm}>
                       <div className="contact-filed mb-20">
                         <input
                           type="text"
-                          name="name"
+                          name="fullname"
                           placeholder="Enter Name"
+                          value={fullname}
+                          minLength={3}
+                          onChange={(text) => setName(text.target.value)}
                         />
                       </div>
                       <div className="contact-filed mb-30">
@@ -78,12 +111,17 @@ const FooterTwo = () => {
                           type="email"
                           name="email"
                           placeholder="Enter Mail"
+                          value={email}
+                          className="w-100 p-2"
+                          onChange={(email) => setEmail(email.target.value)}
                         />
                       </div>
                       <div className="contact-filed mb-25">
                         <textarea
                           placeholder="Enter your Massage"
                           name="message"
+                          value={message}
+                          onChange={(message) => setMessage(message.target.value)}
                         ></textarea>
                       </div>
                       <div className="form-submit">
@@ -104,7 +142,7 @@ const FooterTwo = () => {
             <div className="row align-items-center">
               <div className="col-xl-12">
                 <div className="footer-copyright-text">
-                  <p>© 2022 Searchfortools . All Rights Reserved.</p>
+                  <p>© 2022 brainsees . All Rights Reserved.</p>
                 </div>
               </div>
             </div>
