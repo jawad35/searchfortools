@@ -1,6 +1,6 @@
-import Contact from "../models/Contact";
+import connectDB from "../../lib/mongodb";
+import Contact from "../../models/Contact";
 import mongoose from "mongoose";
-import connectDB from "../lib/mongodb";
 
 export default async function handler(req, res) {
   const { fullname, email, message } = req.body.data;
