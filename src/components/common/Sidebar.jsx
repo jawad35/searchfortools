@@ -139,7 +139,14 @@ const Sidebar = ({ headerMenu }) => {
                   <div className="single_link iconAdd border-0">
                     <li>
                       <Link href="/">
-                        <a>Tools</a>
+                        <a>Home</a>
+                      </Link>
+                    </li>
+                  </div>
+                  <div className="single_link iconAdd border-0">
+                    <li>
+                      <Link href="/courses">
+                        <a>Courses</a>
                       </Link>
                     </li>
                   </div>
