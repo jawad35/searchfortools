@@ -150,6 +150,13 @@ const Sidebar = ({ headerMenu }) => {
                       </Link>
                     </li>
                   </div>
+                  <div className="single_link iconAdd border-0">
+                    <li>
+                      <Link href="/services">
+                        <a>Services</a>
+                      </Link>
+                    </li>
+                  </div>
                   {/* <div className="single_link iconAdd border-0">
                     <li>
                       <Link href="/shop">
@@ -166,8 +173,8 @@ const Sidebar = ({ headerMenu }) => {
                   </div>
                   <div className="single_link iconAdd border-0">
                     <li>
-                      <Link href="/services">
-                        <a>Services</a>
+                      <Link href="/contact">
+                        <a>Contact Us</a>
                       </Link>
                     </li>
                   </div>

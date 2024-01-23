@@ -1,10 +1,10 @@
 import React, { useState } from "react"
 
 const FooterTwo = () => {
-  const [fullname, setName] = useState('')
+  const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
-
+  const [subject, setSubject] = useState('')
 
   const SubmitForm = async (e) => {
 
@@ -20,12 +20,16 @@ const FooterTwo = () => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ data: {fullname, email, message} }),
+      body: JSON.stringify({ data: {name, email, message, subject} }),
     });
     if(response.status == 203) {
       return alert('All feilds are required');
     }
     if (response.status == 200) {
+      setEmail('')
+      setMessage('')
+      setName('')
+      setSubject('')
       return alert('Thanks! Message sent successfully!');
     } else {
       alert('Something went wrong!');
@@ -99,9 +103,11 @@ const FooterTwo = () => {
                       <div className="contact-filed mb-20">
                         <input
                           type="text"
-                          name="fullname"
+                          name="name"
                           placeholder="Enter Name"
-                          value={fullname}
+                          className="w-100 p-2"
+
+                          value={name}
                           minLength={3}
                           onChange={(text) => setName(text.target.value)}
                         />
@@ -116,14 +122,28 @@ const FooterTwo = () => {
                           onChange={(email) => setEmail(email.target.value)}
                         />
                       </div>
+                      <div className="contact-filed mb-20">
+                        <input
+                          type="text"
+                          name="subject"
+                          placeholder="Enter Subject"
+                          value={subject}
+                          className="w-100 p-2"
+                          minLength={3}
+                          onChange={(text) => setSubject(text.target.value)}
+                        />
+                      </div>
                       <div className="contact-filed mb-25">
                         <textarea
                           placeholder="Enter your Massage"
                           name="message"
                           value={message}
+                          className="w-100 p-2"
+
                           onChange={(message) => setMessage(message.target.value)}
                         ></textarea>
                       </div>
+                      
                       <div className="form-submit">
                         <button className="tp-grd-btn" type="submit">
                           Send Massage

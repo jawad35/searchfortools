@@ -3,8 +3,8 @@ import Contact from "../../models/Contact";
 import mongoose from "mongoose";
 
 export default async function handler(req, res) {
-  const { fullname, email, message } = req.body.data;
-  if (!fullname || !email || !message) {
+  const { name, email, message, subject } = req.body.data;
+  if (!name || !email || !message || !subject) {
     return res.status(203).json({
         msg: "All fields are required!",
         success: false,
@@ -12,7 +12,7 @@ export default async function handler(req, res) {
   } else {
     try {
         await connectDB();
-        await Contact.create({ fullname, email, message }).then(res => {
+        await Contact.create({ name, email, message, subject }).then(res => {
             return res.status(201).json({
                 msg: "Message sent successfully",
                 success: true,

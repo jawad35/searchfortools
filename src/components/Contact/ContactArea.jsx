@@ -4,18 +4,24 @@ import ErrorMsg from "../common/ErrorMsg"
 import schema from "../common/schema"
 
 const ContactArea = () => {
-  const handleOnSubmit = (values, { resetForm }) => {
-    alert(
-      `${values.name +
-      "\n" +
-      values.email +
-      "\n" +
-      values.subject +
-      "\n" +
-      values.msg
-      }`
-    )
-    resetForm()
+  const handleOnSubmit = async (values, { resetForm }) => {
+    const {name, message, email, subject} = values
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ data: { name, email, message, subject } }),
+      });
+      if (response.status == 203) {
+        return alert('All feilds are required');
+      }
+      if (response.status == 200) {
+        resetForm()
+        return alert('Thanks! Message sent successfully!');
+      } else {
+        alert('Something went wrong!');
+      }
   }
   const { handleChange, handleSubmit, handleBlur, errors, values, touched } =
     useFormik({
@@ -23,7 +29,7 @@ const ContactArea = () => {
         name: "",
         email: "",
         subject: "",
-        msg: ""
+        message: ""
       },
       validationSchema: schema,
       onSubmit: handleOnSubmit
@@ -90,13 +96,13 @@ const ContactArea = () => {
                       <div className="col-xxl-12">
                         <div className="contact__form-input">
                           <textarea
-                            id="msg"
-                            value={values.msg}
+                            id="message"
+                            value={values.message}
                             onChange={handleChange}
                             onBlur={handleBlur}
                             placeholder="Write  Your Message"
                           ></textarea>
-                          {touched.msg && <ErrorMsg error={errors.msg} />}
+                          {touched.message && <ErrorMsg error={errors.message} />}
                         </div>
                       </div>
                       <div className="col-xxl-12">

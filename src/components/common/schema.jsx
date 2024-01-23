@@ -4,7 +4,7 @@ const schema = Yup.object().shape({
   name: Yup.string().required().label("Name"),
   email: Yup.string().required().email().label("Email"),
   subject: Yup.string().required().min(10).label("Subject"),
-  msg: Yup.string().required().min(20).label("Message")
+  message: Yup.string().required().min(20).label("Message")
 })
 
 export default schema

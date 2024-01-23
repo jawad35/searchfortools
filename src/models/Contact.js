@@ -1,7 +1,7 @@
 import mongoose, { Schema } from "mongoose";
 
 const contactSchema = new Schema({
-  fullname: {
+  name: {
     type: String,
     required: [true, "Name is required."],
     trim: true,
@@ -16,6 +16,10 @@ const contactSchema = new Schema({
   },
 
   message: {
+    type: String,
+    required: [true, "Message is required."],
+  },
+  subject: {
     type: String,
     required: [true, "Message is required."],
   },
